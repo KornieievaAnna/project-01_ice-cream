@@ -1,0 +1,134 @@
+// ul {
+//     list-style: none;
+//     margin-top: 0;
+//     margin-bottom: 0;
+//     padding-left: 0;
+// }
+// img {
+//     display: block;
+// }
+
+// a {
+//     text-decoration: none;
+// }
+// .page-header_container {
+//     background-color: #84A178;
+//     display: flex;
+//     flex-direction: column;
+// }
+// .page-header_wrapper {
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     margin-bottom: 62px;
+// }
+// .open-menu-btn {
+//     background-color: transparent;
+//     border: none;
+// }
+// .hero-title {
+//     font-family: 'Seymour One';
+//     font-style: normal;
+//     font-weight: 400;
+//     letter-spacing: 0.04em;
+//     text-transform: uppercase;
+//     color: #FCFCFC;
+
+//     font-size: 26px;
+//     line-height: 33px;   
+// }
+// .hero-title_slogan {
+//     font-family: 'Seymour One';
+//     font-style: normal;
+//     font-weight: 400;
+//     letter-spacing: 0.04em;
+//     text-transform: uppercase;
+//     color: #FCFCFC;
+
+//     font-size: 34px;
+//     line-height: 96.5%;
+// }
+// .navigation-pages {
+//     display: flex;
+//     flex-direction: column;
+//     width: 247px;
+// }
+// .navigation-pages__products-btn {
+//     font-family: 'Montserrat';
+//     font-style: normal;
+//     font-weight: 600;
+//     font-size: 14px;
+//     line-height: 17px;
+//     display: flex;
+//     align-items: center;
+//     text-align: center;
+//     color: #131313;
+//     border: 2px solid #F8D24E;
+//     background-color: transparent;
+//     border-radius: 8px;
+// }
+
+//    @media screen and (max-width: 479px) {
+//     .header-nav {
+//         display: none;
+//     }
+//     .order-menu-btn {
+//         display: none;
+//     }
+//    }
+   
+//    @media screen and (min-width: 480px) {
+//     .header-nav {
+//         display: none;
+//     }
+//     .order-menu-btn {
+//         display: none;
+//     }
+//    }
+//    @media screen and (min-width: 768px) {
+//     .header-nav {
+//         display: none;
+//     }
+//     .open-menu-btn {
+//         margin-left: auto;
+//         margin-right: 32px;
+//     }
+//     .order-menu-btn {
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         gap: 7px;
+//         padding: 12px 34px;
+//         width: 152px;
+//         background: #F8D24E;
+//         border-radius: 10px;
+//         border: none;
+//     }
+//     .arrow {
+//         border: solid black;
+//         border-width: 0 3px 3px 0;
+//         display: inline-block;
+//         padding: 3px;
+//        }
+//     .right {
+//         transform: rotate(-45deg);
+//         -webkit-transform: rotate(-45deg);
+//     }
+//     .page-header_wrapper {
+//         margin-bottom: 38px;
+//     }
+//    }
+//    @media screen and (min-width: 1200px) {
+//     .header-nav {
+//         display: flex;
+//         gap: 27px;
+//     }
+//     .order-menu-btn {
+//         background-color: transparent;
+//         border: none;
+//     }
+//     .page-header_wrapper {
+//         margin-bottom: 48px;
+//     }
+    
+//    }
