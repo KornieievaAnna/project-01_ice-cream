@@ -1,8 +1,23 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
-:root {
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
+ul,
+ol {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+  list-style: none;
+}
 img {
   display: block;
 }
@@ -22,6 +37,16 @@ a {
 
 input {
   padding: 0px;
+}
+
+.button {
+  cursor: pointer;
+}
+
+body {
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.04em;
 }
 
 .container {
@@ -48,4 +73,10 @@ input {
   .container {
     width: 1200px;
   }
+}
+
+@mixin font($fw, $fs, $lh) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh/$fs;
 }
