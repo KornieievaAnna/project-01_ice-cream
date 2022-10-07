@@ -115,10 +115,13 @@ color: var(--text-color-light)
     fill: var(--background-color);
     transition: fill var(--cubic);
 cursor: pointer;
-
-&:hover,
 &:focus {
     fill: var(--text-color-light);
+    transform: scale(1.1);
+}
+&:hover {
+fill: var(--text-color-light);
+transform: scale(.9);
 }
 }
 
