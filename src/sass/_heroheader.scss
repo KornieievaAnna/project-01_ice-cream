@@ -20,29 +20,49 @@
     text-transform: uppercase;
     color: var(--text-color-light);
 } 
-.hero-title {
+.hero-box {
+    width: 247px; 
+    margin-bottom: 32px;
+}
+.hero-box__title {
     @include herotitle;
     font-size: 26px;
-    line-height: 0.79;   
+    line-height: 0.79; 
 }
-.hero-title_slogan {
+.hero-box__slogan {
     @include herotitle;
     font-size: 34px;
     line-height: 1.03;
+
 }
-.navigation-pages__products-btn {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
+.navigation-pages {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+.navigation-pages__link {
     display: flex;
     align-items: center;
     text-align: center;
+    justify-content: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 0.8;
     color: var(--text-color-dark);
     border: 2px solid var(--button-border-color);
     background-color: transparent;
     border-radius: 8px;
+    width: 62px;
+    height: 24px;
+}
+.navigation-pages__link_decor {
+    justify-content: flex-start;
+    border: none;
+    text-decoration: underline;
+    width: auto;
+    color: var(--accent-color);
 }
 @media screen and (max-width: 479px) {
     .header-nav {
