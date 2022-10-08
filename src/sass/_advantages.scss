@@ -1,14 +1,106 @@
- 
-@media screen and (min-width: 480px) {
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+}
+
+.advantages {
+    padding-top: 42px;
+    padding-bottom: 42px;
+    background-color: var(--background-color);
+}
+
+.advantages-list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.advantages-list__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.advantages-list__title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    color: var(--text-color-light);
+}
+
+.advantages-list__text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 170%;
+    text-align: center;
+    margin-bottom: 16px;
+    color: var(--text-color-light);
+}
+
+.advantages-list__item {
+    width: 100%;
+    margin: 19px;
+}
+
+.advantages-list__item--one::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/cow.png);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+}
+
+.advantages-list__item--two::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/frame.png);
+    margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.advantages-list__item--three::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/icecrema.png);
+    margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*@media screen and (min-width: 480px) {
     // .container {
     //     width: 480px;
     //     margin-left: auto;
     //     margin-right: auto;}
 
-    .advanteges {
+    .advantages {
         padding-top: 60px;
         padding-bottom: 60px;
-        background-color: #84A178;} 
+        background-color:var(--background-color);} 
         
     .advantages-list {
         display: flex;
@@ -24,7 +116,7 @@
         text-align: center;
         letter-spacing: 0.04em;
         text-transform: uppercase;
-        color: #FCFCFC;}
+        color: var(--text-color-light);}
 
     .advantages-list__text {
         font-family: 'Montserrat';
@@ -33,7 +125,7 @@
         font-size: 12px;
         line-height: 170%;
         text-align: center;
-        color: #FCFCFC;}
+        color: var(--text-color-light);}
 
     .advantages-list__item--one::before {
         content: "";
@@ -41,8 +133,28 @@
         width: 50px;
         height: 50px;
         left: 135px;
-        /*background-image: url(../images/);*/
+        background-image: url(../images/cow.png);
         margin-bottom: 76px;
         margin-top: 27px;
     }
-}
+
+    .advantages-list__item--two::before {
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        left: 135px;
+        background-image: url(../images/frame.png);
+        margin-bottom: 76px;
+        margin-top: 27px;}
+
+    .advantages-list__item--three::before {
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        left: 135px;
+        background-image: url(../images/icecrema.png);
+        margin-bottom: 76px;
+        margin-top: 27px;}
+}*/
