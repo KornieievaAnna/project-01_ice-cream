@@ -80,3 +80,8 @@ body {
   font-size: $fs;
   line-height: $lh/$fs;
 }
+
+.vis-hidden {
+  position: fixed;
+  transform: scale(0);
+}
