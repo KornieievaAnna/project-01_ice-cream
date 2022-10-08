@@ -9,7 +9,7 @@
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
 }
-.slick{
+.gallery-section{
   @media screen and (min-width: 768px) and (max-width: 1199px){
     display: none;
   }
@@ -41,20 +41,6 @@
 }
 
 
-// @media screen and (min-width: 768px){
-//   background-image:  
-//   linear-gradient(rgb(132, 161, 120) 0px 180px,  rgba(255, 255, 255, 0.1) 181px 452px),
-//   url("../images/tablet/gallery_background1x.png");
-//   background-size: 768px;
-      
-//   }
-//   @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
-//   screen and (min-resolution: 192dpi) and (min-width: 768px),
-//   screen and (min-resolution: 2dppx) and (min-width: 768px) {
-//       background-image: 
-//       linear-gradient(rgb(132, 161, 120) 0px 180px,  rgba(255, 255, 255, 0.1) 181px 452px),
-//       url("../images/tablet/gallary_background2x.png");
-//   }
 
 
   @media screen and (min-width: 1200px){
@@ -75,13 +61,11 @@ screen and (min-resolution: 2dppx) and (min-width:1200px) {
     
   }
 
-  .slick__img{
+  .gallery-section__img{
     width: 100%;
   }
-  .gallery-container{
-    outline:2px solid red;
-  }
-  .slick__list{
+  
+  .gallery-section__list{
     padding-left: 20px;
     padding-right: 20px;
     
