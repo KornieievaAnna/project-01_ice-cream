@@ -22,7 +22,7 @@
   
 
   background-image:
-  linear-gradient(rgb(132, 161, 120) 0px 60px,rgba(255, 255, 255, 0.9) 60px 186px),
+  linear-gradient(rgb(132, 161, 120) 0px 60px,rgba(255, 255, 255, 0.1) 60px 186px),
       url("../images/mobile/gallery_background1x.png");
       background-repeat: no-repeat;
       background-position: center top;
@@ -34,7 +34,7 @@
   screen and (min-resolution: 2dppx) and (max-width: 767px) {
  
     background-image:
-    linear-gradient(rgb(132, 161, 120) 0px 60px,rgba(255, 255, 255, 0.9) 60px 186px),
+    linear-gradient(rgb(132, 161, 120) 0px 60px,rgba(255, 255, 255, 0.1) 60px 186px),
      url("../images/mobile/gallery_background2x.png");
 
 
@@ -43,7 +43,7 @@
 
 // @media screen and (min-width: 768px){
 //   background-image:  
-//   linear-gradient(rgb(132, 161, 120) 0px 180px,  rgba(255, 255, 255, 0.9) 181px 452px),
+//   linear-gradient(rgb(132, 161, 120) 0px 180px,  rgba(255, 255, 255, 0.1) 181px 452px),
 //   url("../images/tablet/gallery_background1x.png");
 //   background-size: 768px;
       
@@ -52,7 +52,7 @@
 //   screen and (min-resolution: 192dpi) and (min-width: 768px),
 //   screen and (min-resolution: 2dppx) and (min-width: 768px) {
 //       background-image: 
-//       linear-gradient(rgb(132, 161, 120) 0px 180px,  rgba(255, 255, 255, 0.9) 181px 452px),
+//       linear-gradient(rgb(132, 161, 120) 0px 180px,  rgba(255, 255, 255, 0.1) 181px 452px),
 //       url("../images/tablet/gallary_background2x.png");
 //   }
 
@@ -60,7 +60,7 @@
   @media screen and (min-width: 1200px){
     background-size: 1200px;
     background-image: 
-    linear-gradient( rgb(132, 161, 120) 0px 180px,rgba(255, 255, 255, 0.9) 180px 452px), 
+    linear-gradient( rgb(132, 161, 120) 0px 180px,rgba(255, 255, 255, 0.1) 180px 452px), 
     url("../images/desktop/gallery_background1x.png");
   
 }
@@ -69,7 +69,7 @@ screen and (min-resolution: 192dpi) and (min-width: 1200px),
 screen and (min-resolution: 2dppx) and (min-width:1200px) {
 
     background-image: 
-    linear-gradient(rgb(132, 161, 120) 0px 180px,rgba(255, 255, 255, 0.9) 181px 452px),
+    linear-gradient(rgb(132, 161, 120) 0px 180px,rgba(255, 255, 255, 0.1) 181px 452px),
     url("../images/desktop/gallery_background2x.png");
 }
     
@@ -81,4 +81,7 @@ screen and (min-resolution: 2dppx) and (min-width:1200px) {
   .gallery-container{
     outline:2px solid red;
   }
- 
+  .slick__list{
+    padding-left: 94px;
+    padding-right: 94px;
+  }
