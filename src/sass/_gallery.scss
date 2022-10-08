@@ -16,7 +16,7 @@
   padding-top: 60px;
   padding-bottom: 80px;
   @media screen and (min-width: 1200px){
-    padding-top: 84px;
+    padding-top: 87px;
     padding-bottom: 128px;
   }
   
@@ -82,6 +82,12 @@ screen and (min-resolution: 2dppx) and (min-width:1200px) {
     outline:2px solid red;
   }
   .slick__list{
+    padding-left: 20px;
+    padding-right: 20px;
+    
+  @media screen and (min-width: 1200px){
     padding-left: 94px;
     padding-right: 94px;
+  }
+
   }
