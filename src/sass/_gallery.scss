@@ -10,9 +10,9 @@
   clip-path: inset(50%);
 }
 .slick{
-  // @media screen and (min-width: 768px) and (max-width: 1199px){
-  //   display: none;
-  // }
+  @media screen and (min-width: 768px) and (max-width: 1199px){
+    display: none;
+  }
   padding-top: 60px;
   padding-bottom: 80px;
   @media screen and (min-width: 1200px){
