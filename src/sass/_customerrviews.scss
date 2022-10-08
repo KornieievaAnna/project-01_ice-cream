@@ -1,11 +1,7 @@
-
-
 //  ------------- from 0 to 479 resposive----------------
 
-
 @media screen and (max-width: 479px) {
-
-.visually-hidden {
+  .visually-hidden {
     position: absolute;
     white-space: nowrap;
     width: 1px;
@@ -16,218 +12,180 @@
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     margin: -1px;
-}
+  }
 
-.cr-section {
-    padding-top: calc(303/480*100vw);
-    padding-bottom: calc(393/480*100vw);
+  .cr-section {
+    padding-top: calc(303 / 480 * 100vw);
+    padding-bottom: calc(393 / 480 * 100vw);
     background-color: var(--text-color-light);
     max-width: 100%;
     background-image: url(../images/background-icecream.png);
     background-repeat: no-repeat;
     background-position: top;
     background-size: auto;
-    
+  }
 
-}
-
-.container {
+  .container {
     max-width: 480px;
     margin-left: auto;
     margin-right: auto;
- }
+  }
 
-
-
-.cr__image {
-    
-    width: calc(85/480*100vw);
-    height: calc(85/480*100vw);
+  .cr__image {
+    width: calc(85 / 480 * 100vw);
+    height: calc(85 / 480 * 100vw);
     border-radius: 50%;
-    margin-bottom: calc(32/480*100vw);
+    margin-bottom: calc(32 / 480 * 100vw);
     margin-left: auto;
     margin-right: auto;
-    
+  }
 
-}
-
-.cr-text {
-            
-    padding-top: calc(34/480*100vw);
-    padding-bottom: calc(34/480*100vw);
-    padding-left: calc(39/480*100vw);
-    padding-right: calc(39/480*100vw);
-    overflow: auto;
-
+  .cr-text {
+    padding-top: calc(34 / 480 * 100vw);
+    padding-bottom: calc(34 / 480 * 100vw);
+    padding-left: calc(39 / 480 * 100vw);
+    padding-right: calc(39 / 480 * 100vw);
 
     background-color: var(--background-color);
     border-radius: 10px;
-    width: calc(280/480*100vw);
-    height: calc(256/480*100vw);
+    width: calc(280 / 480 * 100vw);
+    height: calc(256 / 480 * 100vw);
 
-    font-size: calc(12/480*100vw);
-    line-height: calc(31/12);
-    text-align: center;    
-    
+    font-size: calc(12 / 480 * 100vw);
+    line-height: calc(31 / 12);
+    text-align: center;
+
     color: var(--text-color-light);
-    margin-bottom: calc(30/480*100vw);
+    margin-bottom: calc(30 / 480 * 100vw);
     margin-left: auto;
     margin-right: auto;
-}
+  }
 
-.cr-name {
+  .cr-name {
     display: block;
     font-weight: 500;
-    font-size: calc(20/480*100vw);
+    font-size: calc(20 / 480 * 100vw);
     line-height: 186%;
     text-align: center;
     color: var(--text-color-dark);
-    margin-bottom: calc(35/480*100vw);
+    margin-bottom: calc(35 / 480 * 100vw);
+  }
 }
-}
-
 
 // ------------- from 480 to 767px adaptive----------------
 
 @media screen and (min-width: 480px) {
+  .visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+  }
 
-    .visually-hidden {
-        position: absolute;
-        white-space: nowrap;
-        width: 1px;
-        height: 1px;
-        overflow: hidden;
-        border: 0;
-        padding: 0;
-        clip: rect(0 0 0 0);
-        clip-path: inset(50%);
-        margin: -1px;
-    }
+  .cr-section {
+    padding-top: 303px;
+    padding-bottom: 393px;
+    background-color: var(--text-color-light);
+    max-width: 100%;
+    background-image: url(../images/background-icecream.png);
+    background-position: top;
+    background-size: auto;
+  }
 
-    .cr-section {
-        padding-top: 303px;
-        padding-bottom: 393px;
-        background-color: var(--text-color-light);
-        max-width: 100%;
-        background-image: url(../images/background-icecream.png);
-        background-position: top;
-        background-size: auto;
+  .cr__image {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    margin-bottom: 32px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
+  .cr-text {
+    padding-top: 34px;
+    padding-bottom: 34px;
+    padding-left: 39px;
+    padding-right: 39px;
+    overflow: auto;
 
-    }
+    background-color: var(--background-color);
+    border-radius: 10px;
+    width: 280px;
+    height: 256px;
 
- 
-    .cr__image {
+    font-size: 12px;
+    line-height: calc(31 / 12);
+    text-align: center;
 
-        width: 85px;
-        height: 85px;
-        border-radius: 50%;
-        margin-bottom: 32px;
-        margin-left: auto;
-        margin-right: auto;
+    color: var(--text-color-light);
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-
-    }
-
-    .cr-text {
-
-        padding-top: 34px;
-        padding-bottom: 34px;
-        padding-left: 39px;
-        padding-right: 39px;
-        overflow: auto;
-
-
-        background-color: var(--background-color);
-        border-radius: 10px;
-        width: 280px;
-        height: 256px;
-
-        font-size: 12px;
-        line-height: calc(31/12);
-        text-align: center;
-
-        color: var(--text-color-light);
-        margin-bottom: 30px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .cr-name {
-        display: block;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 186%;
-        text-align: center;
-        color: var(--text-color-dark);
-        margin-bottom: 35px;
-    }
+  .cr-name {
+    display: block;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 186%;
+    text-align: center;
+    color: var(--text-color-dark);
+    margin-bottom: 35px;
+  }
 }
 
 // ------------- from 768 to 1199 adaptive----------------
 
 @media screen and (min-width: 768px) {
-
-.cr-section {
+  .cr-section {
     padding-top: 218px;
     padding-bottom: 384px;
-    
-}
+  }
 
-.cr__image {
-
+  .cr__image {
     margin-bottom: 28px;
-   
-}
-.cr-text {
-
+  }
+  .cr-text {
     padding-top: 28px;
     padding-bottom: 28px;
     padding-left: 80px;
     padding-right: 80px;
-    
 
-    
     border-radius: 24px;
     width: 705px;
     height: 138px;
 
     font-size: 14px;
     line-height: 186%;
-    
-    
+
     margin-bottom: 32px;
+  }
 
-        
-}
-
-.cr-name {
-    
-    
+  .cr-name {
     font-size: 16px;
     margin-bottom: 32px;
-}
-
+  }
 }
 
 // ------------- from 768 to 1199 adaptive----------------
 
 @media screen and (min-width: 1200px) {
-
-.cr-section {
+  .cr-section {
     padding-top: 573px;
     padding-bottom: 472px;
+  }
 
-}
-
-.cr__image {
-
+  .cr__image {
     margin-bottom: 32px;
+  }
 
-}
-
-.cr-text {
-
+  .cr-text {
     padding-top: 39px;
     padding-bottom: 47px;
     padding-left: 109px;
@@ -235,7 +193,5 @@
 
     width: 968px;
     font-size: 16px;
-
-}
-
+  }
 }
