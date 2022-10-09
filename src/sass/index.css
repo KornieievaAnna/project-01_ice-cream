@@ -184,9 +184,9 @@ body {
   -webkit-transform: rotate(-45deg);
 }
 
-.ice-btn:hover .right {
-  border-width: 0 3px 3px 0;
-  border: solid #FCFCFC;
+.ice-btn:focus .right {
+  border-bottom: solid solid #FCFCFC;
+  border-right: solid #FCFCFC;
 }
 
 .advantage {
