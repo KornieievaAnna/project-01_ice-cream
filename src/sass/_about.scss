@@ -1,0 +1,140 @@
+.about {
+    background-color: #84A178;
+}
+
+.about-text {
+    font-family: 'Montserrat';
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 1.23;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 60px;
+    margin-bottom: 12px;
+    color: #FCFCFC;
+}
+
+.about-title {
+    font-family: 'Seymour One';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.25;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 82px;
+    color: #FCFCFC;
+}
+
+.container-flex {
+    display: flex;
+    align-items: center;
+}
+
+.cow {
+    position: relative;
+    background-color: #F8D24E;
+    width: 500px;
+    height: 500px;
+    border-radius: 250px;
+    margin-right: 100px;
+}
+
+.cow-absoiute {
+    position: absolute;
+    top: 39px;
+    right: 8px;
+}
+.ice-text {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.9;
+    letter-spacing: 0.04em;
+    color: #FCFCFC;
+}
+
+.ice-item:not(:last-child) {
+    padding-bottom: 8px;
+}
+
+.ice-list {
+    width: 463px;
+}
+
+
+.ice-btn {
+    width: 164px;
+    height: 42px;
+    font-family: 'Montserrat SemiBold';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.28;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    border: 0;
+    margin-top: 48px;
+    display: flex;
+    gap: 5px;
+    background-color: #F8D24E;
+    justify-content: center;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ice-btn:hover {
+    background-color: #0A8817;
+}
+
+.ice-btn:focus {
+    background-color: #0A8817;
+    color: #FCFCFC;
+
+}
+
+.ice-btn:default {
+    background-color: #ABABAB;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    webkit-transform: rotate(-45deg);
+}
+
+.advantage {
+    margin-top: 60px;
+}
+
+.advantage-list {
+    display: flex;
+    gap: 32px;
+}
+
+.advantage-title {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 1.22;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.advantage-text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.75;
+    letter-spacing: 0.02em;
+    text-align: center;
+}
