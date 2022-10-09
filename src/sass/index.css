@@ -78,9 +78,9 @@ body {
 
 .about-text {
   font-family: "Montserrat";
-  font-weight: 800;
-  font-size: 30px;
-  line-height: 1.23;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.22;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   text-align: center;
@@ -88,47 +88,109 @@ body {
   margin-bottom: 12px;
   color: var(--text-color-light);
 }
+@media screen and (min-width: 768px) {
+  .about-text {
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 1.23;
+  }
+}
 
 .about-title {
   font-family: "Seymour One";
   font-weight: 400;
-  font-size: 36px;
-  line-height: 1.25;
-  letter-spacing: 0.06em;
+  font-size: 30px;
+  line-height: 1.26;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 82px;
+  margin-bottom: 32px;
   color: var(--text-color-light);
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .about-title {
+    letter-spacing: 0.06;
+    margin-bottom: 82px;
+    font-size: 36px;
+    line-height: 1.25;
+    width: 454px;
+  }
 }
 
 .container-flex {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .container-flex {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container-flex {
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .cow {
   position: relative;
   background-color: var(--accent-color);
-  width: 500px;
-  height: 500px;
+  width: 278px;
+  height: 278px;
   border-radius: 250px;
-  margin-right: 100px;
+  margin-bottom: 62px;
+}
+@media screen and (min-width: 768px) {
+  .cow {
+    width: 330px;
+    height: 330px;
+    margin-right: 32px;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cow {
+    width: 500px;
+    height: 500px;
+    margin-right: 100px;
+  }
 }
 
-.cow-absoiute {
+.cow-absolute {
   position: absolute;
-  top: 39px;
-  right: 8px;
+  top: 22px;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .cow-absolute {
+    top: 26px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cow-absolute {
+    top: 39px;
+    right: 8px;
+  }
 }
 
 .ice-text {
   font-family: "Montserrat";
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.9;
+  font-size: 12px;
+  line-height: 1.75;
   letter-spacing: 0.04em;
   color: var(--text-color-light);
+}
+@media screen and (min-width: 768px) {
+  .ice-text {
+    font-size: 14px;
+    line-height: 1.9;
+  }
 }
 
 .ice-item:not(:last-child) {
@@ -136,7 +198,18 @@ body {
 }
 
 .ice-list {
-  width: 463px;
+  width: 220px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .ice-list {
+    width: 334px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .ice-list {
+    width: 463px;
+  }
 }
 
 .ice-btn {
@@ -150,12 +223,21 @@ body {
   text-align: center;
   border-radius: 10px;
   border: 0;
-  margin-top: 48px;
+  margin-top: 20px;
   display: flex;
   gap: 5px;
   background-color: var(--button-color);
   justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .ice-btn {
+    margin-top: 48px;
+    margin-left: none;
+    margin-right: none;
+  }
 }
 
 .ice-btn:hover {
@@ -179,14 +261,14 @@ body {
   padding: 3px;
 }
 
+.ice-btn:focus .arrow {
+  border-right: solid var(--text-color-light);
+  border-bottom: solid var(--text-color-light);
+}
+
 .right {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
-}
-
-.ice-btn:focus .right {
-  border-bottom: solid solid #FCFCFC;
-  border-right: solid #FCFCFC;
 }
 
 .advantage {
