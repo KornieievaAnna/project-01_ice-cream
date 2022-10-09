@@ -234,6 +234,7 @@
     border-radius: 10px;
     @include font (600, 14px, 17px);
     border: none;
+    transition: color var(--cubic), background-color var(--cubic);
     &:hover {
             color: var(--text-color-dark);
             background-color: var(--button-active-color);
