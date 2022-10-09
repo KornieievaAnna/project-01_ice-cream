@@ -28,8 +28,5 @@
 <symbol id="icon-arrow-hero" viewBox="0 0 82 32">
 <path fill="#FCFCFC" style="fill: var(--color1, #FCFCFC)" d="M81.414 17.414c0.781-0.781 0.781-2.047 0-2.828l-12.728-12.728c-0.781-0.781-2.047-0.781-2.828 0s-0.781 2.047 0 2.828l11.314 11.314-11.314 11.314c-0.781 0.781-0.781 2.047 0 2.828s2.047 0.781 2.828 0l12.728-12.728zM0 18h80v-4h-80v4z"></path>
 </symbol>
-<symbol id="icon-arrow-contact" viewBox="0 0 20 32">
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="5.8182" d="M2.909 4.227l14.4 11.636-14.4 11.636"></path>
-</symbol>
 </defs>
 </svg>
