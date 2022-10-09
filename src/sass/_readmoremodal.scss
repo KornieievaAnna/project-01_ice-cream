@@ -10,7 +10,7 @@
     transition: visibility var(--cubic), opacity var(--cubic);
 }
 
-.backdrop.is-hidden {
+.backdrop .is-hidden {
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
@@ -63,6 +63,7 @@
 
 .read-more-modal__video {
     margin-bottom: 20px;
+    display: flex;
 }
 
 .read-more-modal__video iframe {
@@ -73,7 +74,7 @@
 
 .read-more-modal__desc {
     font-family: 'Montserrat';
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.4;
     color: var(--text-color-dark);
 }
