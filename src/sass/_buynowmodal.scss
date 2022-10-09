@@ -72,11 +72,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 1px;
     gap: 8px;
     width: 53px;
     height: 72px;
-    overflow: hidden;
     border: 2px solid #9CBE8F;
     border-radius: 40px;
 }
@@ -85,9 +83,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: -2px;
     width: 43px;
     height: 43px;
-    margin-top: -1px;
     border-radius: 50%;
     background-color: #9CBE8F;
 }
