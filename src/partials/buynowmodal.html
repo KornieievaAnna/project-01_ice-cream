@@ -1,0 +1,117 @@
+<div class="backdrop" data-modal>
+  <div class="modal-ingredients">
+    <button type="button" class="modal-ingredients__button-closed" data-modal-close>
+      <svg class="modal-ingredients__button-icon">
+        <use href="/src/images/sprite.svg#icon-close_black"></use>
+      </svg>
+    </button>
+    <p class="modal-ingredients__title">Chocolate icecream</p>
+    <div class="modal-ingredients__circle">
+      <picture>
+        <source
+          media="(min-width: 768px )"
+          srcset="/src/images/desktop/modalbuy4@1x.png 1x, /src/images/desktop/modalbuy4@2x.png 2x"
+        />
+        <source
+          media="(max-width: 767px )"
+          srcset="/src/images/mobile/modalbuy4@1x.png 1x, /src/images/mobile/modalbuy4@2x.png 2x"
+        />
+        <img
+          class="modal-ingredients__img"
+          src="/src/images/mobile/modalbuy4@1x.png"
+          alt="an ice cream in a waffle spit"
+        />
+      </picture>
+    </div>
+    <ul class="modal-ingredients__list">
+      <li class="modal-ingredients__item">
+        <div class="modal-ingredients__value">
+          <p class="modal-ingredients__number">320</p>
+        </div>
+        <p class="modal-ingredients__units">kcal</p>
+      </li>
+      <li class="modal-ingredients__item">
+        <div class="modal-ingredients__value">
+          <p class="modal-ingredients__number">4g</p>
+        </div>
+        <p class="modal-ingredients__units">Protein</p>
+      </li>
+      <li class="modal-ingredients__item">
+        <div class="modal-ingredients__value">
+          <p class="modal-ingredients__number">8,2g</p>
+        </div>
+        <p class="modal-ingredients__units">Fats</p>
+      </li>
+      <li class="modal-ingredients__item">
+        <div class="modal-ingredients__value">
+          <p class="modal-ingredients__number">40,4g</p>
+        </div>
+        <p class="modal-ingredients__units">Carbs</p>
+      </li>
+    </ul>
+    <p class="modal-ingredients__subtitle">Ingredients</p>
+    <table class="modal-ingredients__table">
+      <tr class="modal-ingredients__table-row">
+        <td class="modal-ingredients__table-product">Milk</td>
+        <td class="modal-ingredients__table-amount">100ml</td>
+      </tr>
+      <tr class="modal-ingredients__table-row">
+        <td class="modal-ingredients__table-product">Belgian chocolate</td>
+        <td class="modal-ingredients__table-amount">20g</td>
+      </tr>
+      <tr class="modal-ingredients__table-row">
+        <td class="modal-ingredients__table-product">Cream</td>
+        <td class="modal-ingredients__table-amount">150 ml</td>
+      </tr>
+      <tr class="modal-ingredients__table-row">
+        <td class="modal-ingredients__table-product">Cocoa powder</td>
+        <td class="modal-ingredients__table-amount">30g</td>
+      </tr>
+      <tr class="modal-ingredients__table-row">
+        <td class="modal-ingredients__table-product">Sugar</td>
+        <td class="modal-ingredients__table-amount">40g</td>
+      </tr>
+      <tr class="modal-ingredients__table-row">
+        <td class="modal-ingredients__table-product">Vanilla sugar</td>
+        <td class="modal-ingredients__table-amount">10g</td>
+      </tr>
+    </table>
+    <form action="#" class="modal-order__form">
+      <div class="modal-order__inputs modal-order__inputs_ingredients">
+        <label class="modal-order__field modal-order__field_ingredients">
+          <input
+            class="modal-order__input modal-order__input_ingredients"
+            type="text"
+            name="customer`s name"
+            aria-label="enter your name"
+            placeholder="Name"
+            pattern="[a-zA-zа-яА-яіІїЇєЄ]+"
+            required
+          />
+        </label>
+        <label class="modal-order__field modal-order__field_ingredients">
+          <input
+            class="modal-order__input modal-order__input_ingredients"
+            type="tel"
+            name="customer`s phone number"
+            aria-label="enter your phone number"
+            placeholder="Phone"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            maxlength="12"
+            title="123-456-7890"
+            required
+          />
+        </label>
+        <label class="modal-order__field modal-order__field_ingredients-comment">
+          <textarea
+            class="modal-order__input modal-order__input_third modal-order__input_ingredients"
+            name="customer`s comment"
+            aria-label="enter your message"
+            placeholder="Comment"
+          ></textarea>
+        </label>
+      </div>
+      <button class="modal-order__button" type="submit">Submit</button>
+    </form>
+  </div>
+</div>
