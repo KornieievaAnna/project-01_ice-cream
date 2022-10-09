@@ -108,16 +108,21 @@
     padding: 3px;
 }
 
+.ice-btn:hover .arrow{
+    border-right: solid var(--text-color-light);
+    border-bottom: solid var(--text-color-light);
+}
 
+.ice-btn:focus .arrow {
+    border-right: solid var(--text-color-light);
+    border-bottom: solid var(--text-color-light);
+}
 .right {
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
 }
 
-.ice-btn:hover .right{
-    border-width: 0 3px 3px 0;
-    border: solid #FCFCFC;
-}
+
 .advantage {
     margin-top: 60px;
 }
