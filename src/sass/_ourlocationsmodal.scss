@@ -8,7 +8,7 @@
     opacity: 1;
     background: rgba(0, 0, 0, 0.2);
     transition: visibility var(--cubic), opacity var(--cubic);
-    overflow-x: scroll;
+    overflow-y: scroll;
 }
 
 .backdrop-location.is-hidden {
