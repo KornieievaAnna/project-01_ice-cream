@@ -2,7 +2,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-
+        padding-top: 26px;
         padding-bottom: 26px;
         background: var(--background-color);
         
@@ -32,10 +32,6 @@
             font-weight: 500;
             font-size: 12px;
             line-height: 1.83;
-            // display: flex;
-            // align-items: center;
-            // text-align: center;
-        
             color: var(--text-color-dark);
             text-transform: uppercase;
     }
@@ -54,7 +50,6 @@
         color: var(--text-color-dark);
     }
     &__href {
-        position: relative;
         font-weight: 500;
         font-size: 12px;
         line-height: 1.83;
@@ -77,9 +72,6 @@
             font-weight: 500;
             font-size: 12px;
             line-height: 1.83;
-            /* or 22px */
-        
-        
             color: #ABABAB;
     }
     &__time:not(:last-child)
@@ -91,48 +83,115 @@
             font-style: normal;
             font-weight: 500;
             font-size: 12px;
-            line-height: 18px;
-            /* or 150% */
-        
-        
-            color: #131313;
+            line-height: 1.50;
+            color: var(--text-color-dark);
     }
 }
 
-    .contacts-button {
+.contacts-button {
         display: flex;
         flex-direction: column;
         gap: 16px;
-
-        &__first{
+        &__address {
             font-weight: 600;
             font-size: 14px;
             line-height: 1.29;
-
             width: 196px;
             height: 42px;
-            background: #F8D24E;
-            color: #131313;
+            border-radius: 10px;
+        }
+
+        .button_first{
+            background: var(--accent-color);
+            color: var(--text-color-dark);
             border: none;
             border-radius: 10px;
         }
-        &__second {
-            font-weight: 600;
-                font-size: 14px;
-                line-height: 1.29;
+        .button_second {
+    
                 background-color: transparent;
-                width: 196px;
-                height: 42px;
-                color: #131313;
-                border: 2px solid #F8D24E;
-                border-radius: 10px;
+
+                color: var(--text-color-dark);
+                border: 2px solid var(--accent-color);
+                
+    }
+}
+@media screen and (min-width:768px) {
+    .contacts {
+        padding-top: 80px;
+        padding-bottom: 40px;
+        &__text {
+            font-size: 16px;
+            line-height: 1.86;
+        }
+        &__item {
+            width: 224px;
+            padding: 40px 24px;
+        }
+        &__list {
+            flex-direction: row;
+            gap: 16px;
+            margin-bottom: 60px;
         }
     }
-    // &__href::after {
-    //     position: absolute;
-    //     content: "";
-    //     left: 0;
-    //     bottom: 0;
-    //     border: 1px solid #21212133;
-    //     width: 216px;
-    // }
+.contacts-nav {
+        &__text{
+            font-size: 16px;
+            line-height: 1.86;
+        }
+        &__href {
+            font-size: 14px;
+        }
+        &__day {
+            font-size: 14px;
+            line-height: 1.86;
+        }
+        &__time {
+            font-size: 14px;
+            line-height: 1.86;
+        }
+        &__address {
+            font-size: 14px;
+            line-height: 1.83;
+        }
+    }
+    .contacts-button {
+        flex-direction: row;
+    }
+    
+}
+
+@media screen and (min-width:1200px) {
+    .contacts {
+        padding-top: 100px;
+        padding-bottom: 120px;;
+
+        &__item {
+            width: 368px;
+            padding: 40px;
+        }
+
+        &__list {
+            gap: 31px;
+            margin-bottom: 64px;
+        }
+    }
+    .contacts-nav{
+        &__href {
+            font-size: 16px;
+        }
+        &__time {
+            font-size: 16px;
+        }
+        &__day {
+            font-size: 16px;
+        }
+        &__address {
+            font-size: 16px;
+        }
+    }
+    .contacts-button {
+        justify-content: center;
+    }
+    
+}
