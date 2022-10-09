@@ -102,7 +102,8 @@
 }
 
 .arrow {
-    border: solid black;
+    border-right: solid black;
+    border-bottom: solid black;
     border-width: 0 3px 3px 0;
     display: inline-block;
     padding: 3px;
@@ -114,9 +115,10 @@
     -webkit-transform: rotate(-45deg);
 }
 
-.ice-btn:hover .right{
-    border-width: 0 3px 3px 0;
-    border: solid #FCFCFC;
+.ice-btn:hover .arrow{
+  
+    border-right : solid #FCFCFC;
+    border-bottom:solid #FCFCFC;
 }
 .advantage {
     margin-top: 60px;
