@@ -9,6 +9,16 @@
     transition: opacity 1000ms ease, visibility 1000ms ease;
     background-color: rgba(132, 161, 120, 0.3);
 }
+
+// is-hidden
+.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+
 // animation
 // .slide-fwd-center {
 //     -webkit-animation: slide-fwd-center 1000ms both;
@@ -51,7 +61,7 @@
     align-items: center;
 
     padding: 28px;
-    width: 100vw;
+    width: 280px;
 
     background-color: var(--modal-background);
     border: 2px solid var(--modal-border-color);
@@ -176,6 +186,7 @@
 .modal-order__field{
     display: inline-flex;
     width: 224px;
+    
    
         &_first{
             height: 32px;
@@ -195,9 +206,10 @@
     border: 1px solid var(--modal-input-border);
     border-radius: 10px;
     background-color: rgba(248, 210, 78, 0.1);
-    padding-left: 12px;
+    padding: 12px 8px;
         &_third{
             resize: none;
+            overflow-x: hidden;
         }
         &::placeholder{
             font-family: 'Montserrat';
@@ -237,22 +249,12 @@
             background-color: var(--button-disable-color);
         }
 }
-// is-hidden
-.is-hidden {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
-}
+
 
 
 
 // media
-@media screen and (min-width: 480px) {
-    .modal-order {
-        width: 280px;
-    }
 
-}
 
 @media screen and (min-width: 768px) {
     .modal-order {
