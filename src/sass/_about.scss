@@ -1,5 +1,5 @@
 .about {
-    background-color: #84A178;
+    background-color: var(--background-color);
 }
 
 .about-text {
@@ -12,7 +12,7 @@
     text-align: center;
     padding-top: 60px;
     margin-bottom: 12px;
-    color: #FCFCFC;
+    color:var(--text-color-light);
 }
 
 .about-title {
@@ -24,17 +24,19 @@
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 82px;
-    color: #FCFCFC;
+    color:var(--text-color-light);
 }
 
 .container-flex {
     display: flex;
     align-items: center;
+    justify-content: center;
+  
 }
 
 .cow {
     position: relative;
-    background-color: #F8D24E;
+    background-color: var(--accent-color);
     width: 500px;
     height: 500px;
     border-radius: 250px;
@@ -52,7 +54,7 @@
     font-size: 14px;
     line-height: 1.9;
     letter-spacing: 0.04em;
-    color: #FCFCFC;
+    color: var(--text-color-light);
 }
 
 .ice-item:not(:last-child) {
@@ -78,24 +80,25 @@
     margin-top: 48px;
     display: flex;
     gap: 5px;
-    background-color: #F8D24E;
+    background-color: var(--button-color);
     justify-content: center;
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .ice-btn:hover {
-    background-color: #0A8817;
+    background-color: var( --button-active-color);
+    color:var( --button-active-text-color);
 }
 
 .ice-btn:focus {
-    background-color: #0A8817;
-    color: #FCFCFC;
+    background-color: var( --button-active-color);
+    color:var( --button-active-text-color);
 
 }
 
 .ice-btn:default {
-    background-color: #ABABAB;
+    background-color: var(--button-disable-color);
 }
 
 .arrow {
@@ -105,11 +108,16 @@
     padding: 3px;
 }
 
+
 .right {
     transform: rotate(-45deg);
-    webkit-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
 }
 
+.ice-btn:hover .right{
+    border-width: 0 3px 3px 0;
+    border: solid #FCFCFC;
+}
 .advantage {
     margin-top: 60px;
 }
