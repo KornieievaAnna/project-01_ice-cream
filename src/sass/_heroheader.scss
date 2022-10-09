@@ -30,12 +30,12 @@
 } 
 .hero-box {
     width: 247px; 
-    margin-bottom: 32px;
 }
 .hero-box__title {
     @include herotitle;
     font-size: 26px;
     line-height: 1.27; 
+    margin-bottom: 32px;
 }
 .hero-box__slogan {
     @include herotitle;
@@ -53,6 +53,7 @@
     align-items: center;
     text-align: center;
     justify-content: center;
+    padding: 8px 12px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
@@ -183,17 +184,50 @@
     }
     .hero-box {
         width: 181px; 
-        margin-bottom: 20px;
     }
     .hero-box__title {
         @include herotitle;
         font-size: 18px;
         line-height: 1.28; 
+        margin-bottom: 20px;
     }
     .hero-box__slogan {
         @include herotitle;
         font-size: 24px;
         line-height: 0.54;
+    }
+    .hero-info {
+        display: flex;
+    }
+    .hero-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .hero-info__list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .hero-info__number {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 28px;
+        line-height: 34px;
+        text-align: right;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: var(--text-color-dark);
+        margin-bottom: 4px;
+    }
+    .hero-info__desc {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 8px;
+        line-height: 1.25;
+        text-align: right;
+        color: var(--text-color-light);
     }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
@@ -249,6 +283,35 @@
     }
     .logo {
         margin-right: 269px;
+    }
+    .hero-info {
+        display: flex;
+    }
+    .hero-info__list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .hero-info__number {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 28px;
+        line-height: 1.21;
+        text-align: right;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: var(--text-color-dark);
+        margin-bottom: 4px;
+    }
+    .hero-info__desc {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 8px;
+        line-height: 1.25;
+        text-align: right;
+        color: var(--text-color-light);
     }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),

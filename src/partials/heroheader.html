@@ -3,9 +3,19 @@
         <div class="page-header_wrapper">
             <nav class="page-header__navigation">
                 <a class="logo" href="./index.html">
-                    <svg aria-label="logo-icon" width="41" height="37">
-                        <use href="./images/sprite.svg#icon-logo"></use>
-                    </svg>
+                    <picture class="logo__pictures">
+                        <source srcset="./images/desktop/desktop-logo@1x.png 1x,
+                                        ./images/desktop/desktop-logo@2x.png 2x"
+                                        media="(min-width: 1200px)" width="60" height="65"/>
+                        <source srcset="./images/tablet/tablet-logo@1x.png 1x,
+                                        ./images/tablet/tablet-logo@2x.png 2x"
+                                        media="(min-width: 768px)" width="48" height="44"/>
+                        <source srcset="./images/mobile/mobile-logo@1x.png 1x,
+                                        ./images/mobile/mobile-logo@2x.png 2x"
+                                        media="(max-width: 767px)" width="41" height="37"/>         
+                                        
+                        <img aria-label="" width="41" height="37" src="./images/mobile/mobile-logo@1x.png"/>
+                    </picture>
                 </a>
                 <ul class="header-nav">
                     <li class="header-nav__item"><a href="./index.html" class="header-nav__link">Home</a></li>
@@ -21,30 +31,32 @@
             </button>
             <button class="order-menu-btn" type="button">Buy now<i class="arrow right"></i></button>
         </div>
-        <div class="hero-box">
-            <h1 class="hero-box__title">Ice cream made with 
-                <span class="hero-box__slogan">passion</span>
-            </h1>
-        </div>
-        <ul class="navigation-pages">
-            <li class="navigation-pages__item">
-                <a href="#products" class="navigation-pages__link">Products</a>
-            </li>
-            <li class="navigation-pages__item">
-                <a href="#about" class="navigation-pages__link navigation-pages__link_decor">How it's made?</a>
-            </li>
-        </ul>
-        <div class="hero-info">
-            <ul class="hero-info__list">
-                <li class="hero-info__item">
-                    <h2 class="hero-info__number">16</h2>
-                    <p class="hero-info__desc">cafes</p>
-                </li>
-                <li class="hero-info__item">
-                    <h2 class="hero-info__number">23</h2>
-                    <p class="hero-info__desc">food trucks</p>
-                </li>
-            </ul>
+        <div class="hero-container">
+            <div class="hero-box">
+                <h1 class="hero-box__title">Ice cream made with 
+                    <span class="hero-box__slogan">passion</span>
+                </h1>
+                <ul class="navigation-pages">
+                    <li class="navigation-pages__item">
+                        <a href="#products" class="navigation-pages__link">Products</a>
+                    </li>
+                    <li class="navigation-pages__item">
+                        <a href="#about" class="navigation-pages__link navigation-pages__link_decor">How it's made?</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="hero-info">
+                <ul class="hero-info__list">
+                    <li class="hero-info__item">
+                        <h2 class="hero-info__number">16</h2>
+                        <p class="hero-info__desc">cafes</p>
+                    </li>
+                    <li class="hero-info__item">
+                        <h2 class="hero-info__number">23</h2>
+                        <p class="hero-info__desc">food trucks</p>
+                    </li>
+                </ul>
+            </div>
         </div>
         <div class="hero-pic-box">
             <picture class="hero-pic-box__pictures">
