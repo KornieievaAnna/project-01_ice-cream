@@ -1,12 +1,26 @@
 <section class="about">
-    <p class="about-text">tradition and love</p>
-    <h2 class="about-title">how it’s made?</h2>
-    <div class="container-flex">
-        <div class="cow">
-            <img src="/src/images/desktop/about.svg" alt="cow"
-                class="cow-absoiute">
-        </div>
-        <div class="ice">
+    <div class="container">
+        <p class="about-text">tradition and love</p>
+        <h2 class="about-title">how it’s made?</h2>
+        <div class="container-flex">
+            <div class="cow">
+            <picture>
+                <source srcset="/src/images/desktop/about1x.png 1x, 
+                    /src/images/desktop/about2x.png 2x" 
+                    media="(min-width: 1200px)"
+                />
+                <source srcset="/src/images/tablet/about-tab-1x.png 1x,
+                    /src/images/tablet/about-tab-1x.png 2x"
+                    media="(min-width: 768px)"
+                />
+                <source srcset="/src/images/mobile/about-mob-1x.png 1x,
+                    /src/images/mobile/about-mob-2x.png 2x"
+                    media="(max-width: 767px)" 
+                />
+                <img src="/src/images/desktop/about.png" alt="cow" class="cow-absolute">
+            </picture>
+            </div>
+            <div class="ice">
             <ul class="ice-list list">
                 <li class="ice-item">
                     <p class="ice-text">Ice is a place where you will become not only a little happier, but also
@@ -27,7 +41,8 @@
                     <p class="ice-text">This is enough to choose ice cream and coffee for any mood!</p>
                 </li>
             </ul>
-            <button type="button" class="ice-btn">Read more<i class="arrow right"></i></button>
+            <button type="button" class="ice-btn" data-modal-open>Read more<i class="arrow right"></i></button>
+            </div>
         </div>
     </div>
 </section>
