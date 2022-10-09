@@ -1,0 +1,104 @@
+.contacts {
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 26px;
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    &__item {
+        width: 280px;
+        padding: 40px 32px;
+        background: #FCFCFC;
+        box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+        border-radius: 24px;
+    }
+    &__title {
+        text-align: center;
+        width: 80px;
+        margin-bottom: 20px;
+        background: var(--accent-color);
+        border-radius: 4px;
+    }
+    &__text {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 1.83;
+            // display: flex;
+            // align-items: center;
+            // text-align: center;
+        
+            color: var(--text-color-dark);
+            text-transform: uppercase;
+    }
+}
+
+.contacts-nav {
+    &__item:not(:last-child) {
+        margin-bottom: 24px;
+    }
+    &__text{
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.83;
+        margin-bottom: 8px;
+        
+        color: var(--text-color-dark);
+    }
+    &__href {
+        position: relative;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.83;
+        color: var(--adress-text-color);
+
+        &:hover, &:focus {
+            text-decoration: underline;
+            color: var(--adress-text-color);
+        }
+    }
+    &__day {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.83;
+        color: #131313;
+    }
+    &__time {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 1.83;
+            /* or 22px */
+        
+        
+            color: #ABABAB;
+    }
+    &__time:not(:last-child)
+    {
+        margin-bottom: 8px;
+    }
+    &__address {
+        font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            /* or 150% */
+        
+        
+            color: #131313;
+    }
+
+    // &__href::after {
+    //     position: absolute;
+    //     content: "";
+    //     left: 0;
+    //     bottom: 0;
+    //     border: 1px solid #21212133;
+    //     width: 216px;
+    // }
+}
