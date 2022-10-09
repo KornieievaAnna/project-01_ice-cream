@@ -13,6 +13,7 @@
     padding-left: 20px;
     padding-right: 20px;
     width: 280px;
+    height: 990px;
 
     background-color: var(--modal-background);
     border: 2px solid var(--modal-border-color);
@@ -155,6 +156,7 @@
 @media screen and (min-width: 768px) {
     .modal-ingredients {
         width: 568px;
+        height: 995px;
         padding: 32px 40px;
         &__title{
             width: 100%;
