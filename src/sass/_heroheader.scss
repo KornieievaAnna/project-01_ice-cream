@@ -1,0 +1,261 @@
+.page-header {
+    width: 100%;
+    height: 100%;
+}
+.page-header_container {
+    background-color: var(--background-color);
+    background-image: url(../images/mobile/mobile-dots@1x.png);
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-size: auto 50px;
+}
+.page-header_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 15px;
+    margin-bottom: 62px;
+}
+.open-menu-btn {
+    background-color: transparent;
+    border: none;
+}
+@mixin herotitle {
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--text-color-light);
+} 
+.hero-box {
+    width: 247px; 
+    margin-bottom: 32px;
+}
+.hero-box__title {
+    @include herotitle;
+    font-size: 26px;
+    line-height: 1.27; 
+}
+.hero-box__slogan {
+    @include herotitle;
+    font-size: 34px;
+    line-height: 0.97;
+
+}
+.navigation-pages {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+.navigation-pages__link {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 0.8;
+    color: var(--text-color-dark);
+    border: 2px solid var(--button-border-color);
+    background-color: transparent;
+    border-radius: 8px;
+    width: 62px;
+    height: 24px;
+}
+.navigation-pages__link_decor {
+    justify-content: flex-start;
+    border: none;
+    text-decoration: underline;
+    width: auto;
+    color: var(--accent-color);
+}
+
+////////////// Pictures ////////////////////////
+.hero-pic-box {
+    display: flex;
+    align-items: flex-end;
+    gap: 14px;
+}
+.hero-pic-box__desc {
+    max-width: 200px;
+    margin-bottom: 20px;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    line-height: 140%;
+    color: #FCFCFC;
+}
+.hero-pic-box__text {
+    flex-direction: column;
+}
+.hero-pic-aside__ice-cream {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+}
+.page-header_container {
+    position: relative;
+    padding-bottom: 65px;
+}
+////////////// Pictures ////////////////////////
+@media screen and (max-width: 479px) {
+    .header-nav {
+        display: none;
+    }
+    .order-menu-btn {
+        display: none;
+    }
+    .hero-info {
+        display: none;
+    }
+    .page-header_container {
+        padding-bottom: 239px;
+    }
+    .hero-pic-box {
+        display: none;
+    }
+}
+@media screen and (min-width: 480px) {
+    .header-nav {
+        display: none;
+    }
+    .order-menu-btn {
+        display: none;
+    }
+    .hero-info {
+        display: none;
+    }
+    .page-header_container {
+        padding-bottom: 239px;
+    }
+    .hero-pic-box {
+        display: none;
+    }
+}
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    .page-header_container {
+        background-image: url(../images/mobile/mobile-dots@2x.png);
+        background-size: auto 50px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .page-header_container {
+        padding-left: 32px;
+        padding-right: 32px;
+        padding-bottom: 193px;
+        background-image: url(../images/tablet/tablet-dots@1x.png);
+        background-size: auto 67px;
+    }
+    .header-nav {
+        display: none;
+    }
+    .open-menu-btn {
+        margin-left: auto;
+        margin-right: 32px;
+    }
+    .order-menu-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 7px;
+        padding: 12px 34px;
+        width: 152px;
+        background: var(--button-color);
+        border-radius: 10px;
+        border: none;
+    }
+    .arrow {
+        border: solid black;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+       }
+    .right {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+    }
+    .page-header_wrapper {
+        margin-bottom: 38px;
+    }
+    .hero-box {
+        width: 181px; 
+        margin-bottom: 20px;
+    }
+    .hero-box__title {
+        @include herotitle;
+        font-size: 18px;
+        line-height: 1.28; 
+    }
+    .hero-box__slogan {
+        @include herotitle;
+        font-size: 24px;
+        line-height: 0.54;
+    }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    .page-header_container {
+        background-image: url(../images/tablet/tablet-dots@2x.png);
+        background-size: auto 67px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .page-header_container {
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-bottom: 331px;
+        background-image: url(../images/desktop/desctop-dots@1x.png);
+        background-size: auto 384px;
+    }
+    .header-nav {
+        display: flex;
+        gap: 27px;
+    }
+    .page-header__navigation {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 27px;
+    }
+    .header-nav__link {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.25;
+        color: var(--text-color-light);
+    }
+    .page-header_wrapper {
+        margin-bottom: 48px;
+    }
+    .hero-box {
+        width: 367px; 
+        margin-bottom: 28px;
+    }
+    .hero-box__title {
+        @include herotitle;
+        font-size: 38px;
+        line-height: 1.26; 
+    }
+    .hero-box__slogan {
+        @include herotitle;
+        font-size: 38px;
+        line-height: 1.26;
+    }
+    .logo {
+        margin-right: 269px;
+    }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .page-header_container {
+    background-image: url(../images/desktop/desctop-dots@2x.png); 
+    background-size: auto 384px;
+  }
+}
