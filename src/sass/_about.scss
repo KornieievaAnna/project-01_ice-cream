@@ -1,6 +1,8 @@
 .about {
     background-color: var(--background-color);
-    max-width: 100%;
+        width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
     
     @media screen and (min-width: 480px) {
         max-width: 480px;
