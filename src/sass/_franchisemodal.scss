@@ -1,0 +1,175 @@
+.backdrop-franchise {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.2);
+    transition: visibility var(--cubic), opacity var(--cubic);
+    overflow-y: scroll;
+}
+
+.backdrop-franchise.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.franchise-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 280px;
+    height: 674px;
+    background-color: var(--modal-background);
+    border-radius: 10px;
+    border: 2px solid var(--button-color);
+    transition: fill var(--cubic);
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.franchise-modal__close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: transparent;
+    padding: 0;
+    border: none;
+
+    &:hover,
+    &:focus {
+        fill: var(--button-color);
+    }
+}
+
+.franchise-modal__icon {
+    width: 16px;
+    height: 16px;
+}
+
+.franchise-modal__title {
+    font-family: 'Seymour One';
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--text-color-dark);
+    margin-bottom: 20px;
+}
+
+.franchise-modal__desc {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    line-height: 1.4;
+    color: var(--text-color-dark);
+    margin-bottom: 24px;
+}
+
+.franchise-modal-form__fild {
+    display: flex;
+    margin-bottom: 12px;
+    width: 224px;
+}
+
+.franchise-modal-form__iput {
+    width: 100%;
+    height: 32px;
+    border-radius: 10px;
+    padding-left: 12px;
+    background: rgba(248, 210, 78, 0.1);
+    border: 1px solid #84A178;
+}
+
+.franchise-modal-form__fild-text {
+    display: block;
+    margin-bottom: 24px;
+}
+
+.franchise-modal-form__text {
+    display: block;
+    width: 100%;
+    height: 64px;
+    resize: none;
+    border-radius: 10px;
+    padding-left: 12px;
+    background: rgba(248, 210, 78, 0.1);
+    border: 1px solid #84A178;
+}
+
+.franchise-modal-form__btn {
+    display: block;
+    margin: 0 auto;
+    width: 114px;
+    height: 42px;
+    background: var(--button-color);
+    border-radius: 10px;
+    border-color: transparent;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    color: var(--text-color-dark);
+    transition: background var(--cubic), color var(--cubic);
+
+        &:hover {
+            background: var(--button-active-color);
+        }
+        &:focus {
+            background: var(--button-active-color);
+            color: var(--modal-background);
+        }
+}
+
+@media screen and (min-width: 768px) {
+    .franchise-modal {
+        width: 568px;
+        height: 668px;
+        padding: 32px 60px;
+    }
+
+    .franchise-modal__icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .franchise-modal__title {
+        font-size: 20px;
+        line-height: 1.4;
+        margin-bottom: 24px;
+        text-align: center;
+    }
+
+    .franchise-modal__desc {
+        font-size: 16px;
+        line-height: 1.4;
+        margin-bottom: 32px;
+    }
+
+    .franchise-modal-form__fild {
+        margin-bottom: 16px;
+        width: 368px;
+    }
+
+    .franchise-modal-form__iput {
+        height: 42px;
+    }
+
+    .franchise-modal-form__text {
+        height: 84px;
+    }
+
+    .franchise-modal-form__fild-text {
+        margin-bottom: 32px;
+    }
+
+    .franchise-modal-form__btn {
+        width: 121px;
+        height: 42px;
+        font-size: 14px;
+        line-height: 1.21;
+    }
+}
