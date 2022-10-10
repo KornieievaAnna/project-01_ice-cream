@@ -6,7 +6,7 @@
         padding-bottom: 26px;
 
 
-        background-image: linear-gradient( rgba(255, 255, 255, 0.1) 0px 84px, rgb(132, 161, 120) 84px  100% ), url(../images/mobile/gallery_background1x.png);
+        background-image: linear-gradient( rgba(255, 255, 255, 0.1) 0px 365px, rgb(132, 161, 120) 365px  100% ), url(../images/mobile/gallery_background1x.png);
                 background-position: top;
                 background-repeat: no-repeat;
                 background-size: 480px;
@@ -16,7 +16,7 @@
                 screen and (min-resolution: 2dppx) and (max-width: 767px) {
                 
                 background-image:
-                linear-gradient(rgba(255, 255, 255, 0.1) 0  84px , rgb(132, 161, 120) 84px 100% ),
+                linear-gradient(rgba(255, 255, 255, 0.1) 0  365px , rgb(132, 161, 120) 365px 100% ),
                 url("../images/mobile/gallery_background2x.png");
                     }
     &__list {
@@ -181,7 +181,7 @@
     .contacts {
         background-size: 768px;
         background-image:
-        linear-gradient(rgba(255, 255, 255, 0.1) 164px 100%, rgb(132, 161, 120) 0px 164px ),
+        linear-gradient(rgba(255, 255, 255, 0.1) 0 168px, rgb(132, 161, 120) 168px 100% ),
                 url("../images/tablet/gallery_background1x.png");
         padding-top: 80px;
         padding-bottom: 40px;
@@ -232,7 +232,7 @@
     screen and (min-resolution: 192dpi) and (min-width: 768px),
     screen and (min-resolution: 2dppx) and (min-width:768px) {
         .contacts {
-        background-image: linear-gradient(rgba(255, 255, 255, 0.1) 164px 100%, rgb(132, 161, 120) 0px 164px ),
+        background-image: linear-gradient(rgba(255, 255, 255, 0.1) 0 168px, rgb(132, 161, 120) 168px 100% ),
             url("../images/tablet/gallary_background2x.png");
 }
     }
@@ -241,7 +241,7 @@
     .contacts {
         background-size: 1200px;
             background-image:
-                linear-gradient(rgba(255, 255, 255, 0.1) 94px 100%, rgb(132, 161, 120) 0px 94px ),
+                linear-gradient(rgba(255, 255, 255, 0.1) 0 194px, rgb(132, 161, 120) 194px 100% ),
                 url("../images/desktop/gallery_background1x.png");
         padding-top: 100px;
         padding-bottom: 120px;;
@@ -280,7 +280,7 @@ screen and (min-resolution: 192dpi) and (min-width: 1200px),
 screen and (min-resolution: 2dppx) and (min-width:1200px) {
     .contacts {
         background-image:
-        linear-gradient(rgba(255, 255, 255, 0.1) 94px 100%, rgb(132, 161, 120) 0px 94px ),
+        linear-gradient(rgba(255, 255, 255, 0.1) 0 194px, rgb(132, 161, 120) 194px 100% ),
         url("../images/desktop/gallery_background2x.png");
     }
 }
