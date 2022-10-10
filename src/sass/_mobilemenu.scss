@@ -1,0 +1,129 @@
+.mobile-container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 500;
+  width: 100%;
+  height: 100%;
+  background-color: #97af8d;
+  overflow: scroll;
+  transform: translatex(100%);
+}
+
+.mobile-menu.is-open {
+  transform: translatex(0);
+}
+
+.mobile-menu__close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  line-height: 0;
+  width: 40px;
+  height: 40px;
+}
+
+.mobile-menu__clouse-btn__icon {
+  width: 32px;
+  height: 32px;
+  fill: var(--text-color-light);
+  &:hover {
+    fill: var(--button-color);
+  }
+}
+
+.mobile-logo {
+  position: absolute;
+  top: 12px;
+  left: 31px;
+  @media screen and (min-width: 768px) {
+    top: 20px;
+    left: 32px;
+  }
+}
+
+.mobile-menu-nav {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.mobile-menu-nav__link {
+  display: block;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.2;
+  color: var(--text-color-light);
+
+  &:hover,
+  &:focus {
+    color: var(--text-color-dark);
+  }
+}
+
+.mobile-menu-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  padding: 12px 34px;
+  width: 152px;
+  height: 42px;
+  background: var(--button-color);
+  border-radius: 10px;
+  border: none;
+  margin-top: 111px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  color: var(--text-color-dark);
+
+  &:hover,
+  &:focus {
+    background: var(--button-active-color);
+  }
+
+  &:focus {
+    color: var(--text-color-light);
+  }
+
+  &:disabled {
+    background: var(--button-disable-color);
+  }
+
+  &:focus .arrow {
+    border-right: solid var(--text-color-light);
+    border-bottom: solid var(--text-color-light);
+  }
+}
+@media screen and (min-width: 768px) {
+  .mobile-container {
+    padding-top: 140px;
+  }
+  .mobile-menu-btn {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mobile-menu {
+    display: none;
+  }
+}

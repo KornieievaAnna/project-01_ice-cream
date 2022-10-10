@@ -49,11 +49,6 @@ body {
   letter-spacing: 0.04em;
 }
 
-.container {
-  width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
-}
 
 .visually-hidden {
   position: absolute;
@@ -93,10 +88,16 @@ body {
 @mixin font($fw, $fs, $lh) {
   font-weight: $fw;
   font-size: $fs;
-  line-height: $lh/$fs;
+  line-height:calc($lh / $fs);
 }
 
 .vis-hidden {
   position: fixed;
   transform: scale(0);
+}
+
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
 }

@@ -1,0 +1,131 @@
+.backdrop-location {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.2);
+    transition: visibility var(--cubic), opacity var(--cubic);
+    overflow-y: scroll;
+}
+
+.backdrop-location.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.location-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 280px;
+    height: 365px;
+    background-color: var(--modal-background);
+    border-radius: 10px;
+    border: 2px solid var(--button-color);
+    transition: fill var(--cubic);
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.location-modal__close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: transparent;
+    padding: 0;
+    border: none;
+
+    &:hover,
+    &:focus {
+        fill: var(--button-color);
+    }
+}
+
+.location-modal__icon {
+    width: 16px;
+    height: 16px;
+}
+
+.location-modal__title {
+    font-family: 'Seymour One';
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: var(--text-color-dark);
+}
+
+.location-modal__map {
+    margin-bottom: 24px;
+    display: flex;
+}
+
+.location-modal__map iframe {
+    width: 224px;
+    height: 199px;
+    border-radius: 10px;
+}
+
+.location-modal__open-btn {
+    width: 134px;
+    height: 42px;
+    background: var(--button-color);
+    border-radius: 10px;
+    border: transparent;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    color: var(--text-color-dark);
+    transition: background var(--cubic), color var(--cubic);
+
+        &:hover {
+            background: var(--button-active-color);
+        }
+        &:focus {
+            background: var(--button-active-color);
+            color: var(--modal-background);
+        }
+}
+
+@media screen and (min-width: 768px) {
+    .location-modal {
+        width: 568px;
+        height: 458px;
+        padding: 32px 60px;
+    }
+
+    .location-modal__icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .location-modal__title {
+        font-size: 20px;
+        line-height: 1.4;
+        margin-bottom: 32px;
+    }
+
+    .location-modal__map {
+        margin-bottom: 32px;
+    }
+
+    .location-modal__map iframe {
+        width: 448px;
+        height: 260px;
+        border-radius: 10px;
+    }
+   
+    .location-modal__open-btn {
+        width: 145px;
+        height: 42px;
+        font-size: 12px;
+        line-height: 1.21;
+    }
+}
