@@ -105,7 +105,8 @@
     height: 50px;
     background-image: url(../images/mobile/mobile-dots@1x.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    background-position: center;
 }
 @media screen and (max-width: 479px) {
     .header-nav {
