@@ -2,6 +2,10 @@
     background-color: var(--background-color);
 }
 
+.container-top {
+    padding-top: 60px;
+}
+
 .about-text {
     font-family: 'Montserrat';
     font-weight: 700;
@@ -10,7 +14,6 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     text-align: center;
-    padding-top: 60px;
     margin-bottom: 12px;
     color:var(--text-color-light);
 
@@ -37,7 +40,7 @@
     
     @media screen and (min-width: 768px) {
         letter-spacing: 0.06;
-        margin-bottom: 82px;
+        margin-bottom: 72px;
         font-size: 36px;
         line-height: 1.25;
         width: 454px;
@@ -52,10 +55,10 @@
     
     @media screen and (min-width: 768px) {
         flex-direction: row;
+        justify-content: space-between;
     }
     
     @media screen and (min-width: 1200px) {
-        justify-content: center;
         align-items: center;
     }
 }
@@ -71,31 +74,43 @@
     @media screen and (min-width: 768px) {
         width: 330px;
         height: 330px;
-        margin-right: 32px;
         margin-bottom: 0;
     }
     
     @media screen and (min-width: 1200px) {
         width: 500px;
         height: 500px;
-        margin-right: 100px;
     }
 }
 
 .cow-absolute {
     position: absolute;
     top: 22px;
-    width: 100%;
+    width: 278px;
 
     @media screen and (min-width: 768px) {
         top: 26px;
+        width: 334px;
     }
     
     @media screen and (min-width: 1200px) {
         top: 39px;
         right: 8px;
+        width: 490px;
     }
 }
+
+.ice {
+    @media screen and (min-width: 768px) {
+        margin-right: 19px;
+        margin-left: auto;
+        }
+    @media screen and (min-width: 1200px) {
+        margin-right: 106px;
+        margin-left: auto;
+    }
+}
+
 .ice-text {
     font-family: 'Montserrat';
     font-weight: 400;
@@ -105,8 +120,12 @@
     color: var(--text-color-light);
     
     @media screen and (min-width: 768px) {
-        font-size: 14px;
         line-height: 1.9;
+    }
+
+    @media screen and (min-width: 1200px) {
+        text-align: start;
+        font-size: 16px;
     }
 }
 
@@ -151,9 +170,11 @@
 
     @media screen and (min-width: 768px) {
         margin-top: 48px;
-        margin-left: none;
-        margin-right: none;
     }
+    @media screen and (min-width: 1200px) {
+        margin-left: 0;
+        margin-right: 0;
+        }
 }
 
 .ice-btn:hover {
