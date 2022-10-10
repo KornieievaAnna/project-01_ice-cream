@@ -22,6 +22,7 @@
           class="franchise-modal-form__iput"
           name="user-name"
           placeholder="Name"
+          pattern="[a-zA-Zа-яА-ЯіІїЇ]+"
           required
       /></label>
       <label class="franchise-modal-form__fild"
@@ -30,6 +31,8 @@
           class="franchise-modal-form__iput"
           name="user-phone"
           placeholder="Phone"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+          title="xxx-xxx-xx-xx"
           required
       /></label>
       <label class="franchise-modal-form__fild"
