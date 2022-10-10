@@ -96,9 +96,13 @@ body {
   line-height: $lh/$fs;
 }
 
-
 .vis-hidden {
   position: fixed;
   transform: scale(0);
 }
 
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}

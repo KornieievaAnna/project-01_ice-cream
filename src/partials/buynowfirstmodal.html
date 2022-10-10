@@ -1,4 +1,4 @@
-<div class="backdrop" data-modal>
+<div class="backdrop is-hidden" data-modal-open>
   <div class="modal-order">
     <button type="button" class="modal-order__button-closed" data-modal-close>
       <svg class="modal-order__button-icon">
@@ -12,29 +12,19 @@
         <label aria-label="choose Ice Cream" class="modal-order__checkbox">
           <input class="modal-order__check visually-hidden" type="checkbox" name="Ice Cream" />
 
-          <span class="modal-order__checkbox-thumb modal-order__checkbox-thumb_first"
-            >Ice Cream
+          <span class="modal-order__checkbox-thumb modal-order__checkbox-thumb_first">Ice Cream
             <span class="modal-order__checkbox-circle modal-order__checkbox-circle_first">
               <picture>
-                <source
-                  media="(min-width: 768px )"
-                  srcset="
+                <source media="(min-width: 768px )" srcset="
                     /src/images/desktop/modalbuy1@1x.png 1x,
                     /src/images/desktop/modalbuy1@2x.png 2x
-                  "
-                />
-                <source
-                  media="(max-width: 767px )"
-                  srcset="
+                  " />
+                <source media="(max-width: 767px )" srcset="
                     /src/images/mobile/modalbuy1@1x.png 1x,
                     /src/images/mobile/modalbuy1@2x.png 2x
-                  "
-                />
-                <img
-                  class="modal-order__custom-checkbox"
-                  src="/src/images/mobile/modalbuy1@1x.png"
-                  alt="an ice cream in a waffle spit"
-                />
+                  " />
+                <img class="modal-order__custom-checkbox" src="/src/images/mobile/modalbuy1@1x.png"
+                  alt="an ice cream in a waffle spit" />
               </picture>
             </span>
           </span>
@@ -42,58 +32,38 @@
         <label aria-label="choose Ice coffee" class="modal-order__checkbox">
           <input class="modal-order__check visually-hidden" type="checkbox" name="Ice Coffee" />
 
-          <span class="modal-order__checkbox-thumb modal-order__checkbox-thumb_second"
-            >Ice Coffee
+          <span class="modal-order__checkbox-thumb modal-order__checkbox-thumb_second">Ice Coffee
             <span class="modal-order__checkbox-circle modal-order__checkbox-circle_second">
               <picture>
-                <source
-                  media="(min-width: 768px )"
-                  srcset="
+                <source media="(min-width: 768px )" srcset="
                     /src/images/desktop/modalbuy2@1x.png 1x,
                     /src/images/desktop/modalbuy2@2x.png 2x
-                  "
-                />
-                <source
-                  media="(max-width: 767px )"
-                  srcset="
+                  " />
+                <source media="(max-width: 767px )" srcset="
                     /src/images/mobile/modalbuy2@1x.png 1x,
                     /src/images/mobile/modalbuy2@2x.png 2x
-                  "
-                />
-                <img
-                  class="modal-order__custom-checkbox"
-                  src="/src/images/mobile/modalbuy2@1x.png"
-                  alt="an ice coffee in a tall glass"
-                />
+                  " />
+                <img class="modal-order__custom-checkbox" src="/src/images/mobile/modalbuy2@1x.png"
+                  alt="an ice coffee in a tall glass" />
               </picture>
             </span>
           </span>
         </label>
         <label aria-label="choose Milkshake" class="modal-order__checkbox">
           <input class="modal-order__check visually-hidden" type="checkbox" name="Milkshake" />
-          <span class="modal-order__checkbox-thumb modal-order__checkbox-thumb_third"
-            >Milkshake
+          <span class="modal-order__checkbox-thumb modal-order__checkbox-thumb_third">Milkshake
             <span class="modal-order__checkbox-circle modal-order__checkbox-circle_third">
               <picture>
-                <source
-                  media="(min-width: 768px )"
-                  srcset="
+                <source media="(min-width: 768px )" srcset="
                     /src/images/desktop/modalbuy3@1x.png 1x,
                     /src/images/desktop/modalbuy3@2x.png 2x
-                  "
-                />
-                <source
-                  media="(max-width: 767px )"
-                  srcset="
+                  " />
+                <source media="(max-width: 767px )" srcset="
                     /src/images/mobile/modalbuy3@1x.png 1x,
                     /src/images/mobile/modalbuy3@2x.png 2x
-                  "
-                />
-                <img
-                  class="modal-order__custom-checkbox"
-                  src="/src/images/mobile/modalbuy3@1x.png"
-                  alt="a milkshake in a tall glass"
-                />
+                  " />
+                <img class="modal-order__custom-checkbox" src="/src/images/mobile/modalbuy3@1x.png"
+                  alt="a milkshake in a tall glass" />
               </picture>
             </span>
           </span>
@@ -102,36 +72,17 @@
       <!-- inputs -->
       <div class="modal-order__inputs">
         <label class="modal-order__field modal-order__field_first">
-          <input
-            class="modal-order__input"
-            type="text"
-            name="customer`s name"
-            aria-label="enter your name"
-            placeholder="Name"
-            pattern="[a-zA-zа-яА-яіІїЇєЄ]+"
-            required
-          />
+          <input class="modal-order__input" type="text" name="customer`s name" aria-label="enter your name"
+            placeholder="Name" pattern="[a-zA-zа-яА-яіІїЇєЄ]+" required />
         </label>
         <label class="modal-order__field modal-order__field_second">
-          <input
-            class="modal-order__input"
-            type="tel"
-            name="customer`s phone number"
-            aria-label="enter your phone number"
-            placeholder="Phone"
-            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-            maxlength="12"
-            title="123-456-7890"
-            required
-          />
+          <input class="modal-order__input" type="tel" name="customer`s phone number"
+            aria-label="enter your phone number" placeholder="Phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="12"
+            title="123-456-7890" required />
         </label>
         <label class="modal-order__field modal-order__field_third">
-          <textarea
-            class="modal-order__input modal-order__input_third"
-            name="customer`s comment"
-            aria-label="enter your message"
-            placeholder="Comment"
-          ></textarea>
+          <textarea class="modal-order__input modal-order__input_third" name="customer`s comment"
+            aria-label="enter your message" placeholder="Comment"></textarea>
         </label>
       </div>
       <button class="modal-order__button" type="submit">Submit</button>
