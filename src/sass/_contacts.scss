@@ -4,7 +4,9 @@
         justify-content: center;
         padding-top: 26px;
         padding-bottom: 26px;
-        background-image: linear-gradient(#ffffff1a 35px 100%, #84a178 0 35px ), url(../images/mobile/gallery_background1x.png), ;
+
+
+        background-image: linear-gradient( rgba(255, 255, 255, 0.1) 0px 84px, rgb(132, 161, 120) 84px  100% ), url(../images/mobile/gallery_background1x.png);
                 background-position: top;
                 background-repeat: no-repeat;
                 background-size: 480px;
@@ -14,7 +16,7 @@
                 screen and (min-resolution: 2dppx) and (max-width: 767px) {
                 
                 background-image:
-                linear-gradient(rgba(255, 255, 255, 0.1) 35px 100%, rgb(132, 161, 120) 0px 35px ),
+                linear-gradient(rgba(255, 255, 255, 0.1) 0  84px , rgb(132, 161, 120) 84px 100% ),
                 url("../images/mobile/gallery_background2x.png");
                     }
     &__list {
