@@ -15,6 +15,9 @@
     width: 280px;
     height: 990px;
 
+    animation: bounceInDown;
+    animation-duration: 500ms;
+
     background-color: var(--modal-background);
     border: 2px solid var(--modal-border-color);
     border-radius: 10px;
