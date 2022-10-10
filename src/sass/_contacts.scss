@@ -4,8 +4,19 @@
         justify-content: center;
         padding-top: 26px;
         padding-bottom: 26px;
-        background: var(--background-color);
-        
+        background-image: linear-gradient(#ffffff1a 35px 100%, #84a178 0 35px ), url(../images/mobile/gallery_background1x.png), ;
+                background-position: top;
+                background-repeat: no-repeat;
+                background-size: 480px;
+
+        @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+                screen and (min-resolution: 192dpi) and (max-width: 767px),
+                screen and (min-resolution: 2dppx) and (max-width: 767px) {
+                
+                background-image:
+                linear-gradient(rgba(255, 255, 255, 0.1) 35px 100%, rgb(132, 161, 120) 0px 35px ),
+                url("../images/mobile/gallery_background2x.png");
+                    }
     &__list {
         display: flex;
         flex-direction: column;
@@ -111,18 +122,46 @@
             width: 196px;
             height: 42px;
             border-radius: 10px;
+            &:focus {
+                    color: var(--button-active-text-color);
+                }
+            
+                &:focus .arrow {
+                    border-right: solid var(--text-color-light);
+                    border-bottom: solid var(--text-color-light);
+                }
         }
         .button_first{
             background: var(--accent-color);
             color: var(--text-color-dark);
             border: none;
             border-radius: 10px;
-        }
+            &:hover {
+                background: var(--button-active-color);
+            }
+            &:focus {
+                color: var(--button-active-text-color);
+            }
+            &:disabled {
+                border: none;
+                color: var(--button-disable-color);
+            }
+    }
         .button_second {
             background-color: transparent;
             color: var(--text-color-dark);
             border: 2px solid var(--accent-color);
-    }
+            &:hover {
+                border: 2px solid #0A8817;
+            }
+            &:focus {
+                color: var(--button-active-text-color);
+            }
+            &:disabled {
+                border: none;
+                color: var(--button-disable-color);
+            }
+}
 }
 .arrow {
     border-right: solid black;
@@ -138,6 +177,10 @@
 }
 @media screen and (min-width:768px) {
     .contacts {
+        background-size: 768px;
+        background-image:
+        linear-gradient(rgba(255, 255, 255, 0.1) 164px 100%, rgb(132, 161, 120) 0px 164px ),
+                url("../images/tablet/gallery_background1x.png");
         padding-top: 80px;
         padding-bottom: 40px;
         &__text {
@@ -156,7 +199,7 @@
             margin-bottom: 60px;
         }
     }
-.contacts-nav {
+    .contacts-nav {
         gap: 64px;
         &__text{
             font-size: 16px;
@@ -183,9 +226,21 @@
     }
     
 }
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+    screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width:768px) {
+        .contacts {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.1) 164px 100%, rgb(132, 161, 120) 0px 164px ),
+            url("../images/tablet/gallary_background2x.png");
+}
+    }
 
 @media screen and (min-width:1200px) {
     .contacts {
+        background-size: 1200px;
+            background-image:
+                linear-gradient(rgba(255, 255, 255, 0.1) 94px 100%, rgb(132, 161, 120) 0px 94px ),
+                url("../images/desktop/gallery_background1x.png");
         padding-top: 100px;
         padding-bottom: 120px;;
 
@@ -217,4 +272,13 @@
         justify-content: center;
     }
     
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+screen and (min-resolution: 192dpi) and (min-width: 1200px),
+screen and (min-resolution: 2dppx) and (min-width:1200px) {
+    .contacts {
+        background-image:
+        linear-gradient(rgba(255, 255, 255, 0.1) 94px 100%, rgb(132, 161, 120) 0px 94px ),
+        url("../images/desktop/gallery_background2x.png");
+    }
 }
