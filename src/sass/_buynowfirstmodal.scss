@@ -6,7 +6,7 @@
     top: 0;
     left: 0;
     overflow: scroll;
-    transition: opacity 1000ms ease, visibility 1000ms ease;
+    transition: opacity var(--cubic), visibility var(--cubic);
     background-color: transparent;
 }
 
@@ -19,37 +19,7 @@
 
 
 
-// animation
-// .slide-fwd-center {
-//     -webkit-animation: slide-fwd-center 1000ms both;
-//     animation: slide-fwd-center 1000ms both;
-// }
 
-
-// @-webkit-keyframes slide-fwd-center {
-//     0% {
-//         -webkit-transform: translateZ(0);
-//         transform: translateZ(0);
-//     }
-
-//     100% {
-//         -webkit-transform: translateZ(160px);
-//         transform: translateZ(160px);
-//     }
-// }
-
-// @keyframes slide-fwd-center {
-//     0% {
-//         -webkit-transform: translateZ(0);
-//         transform: translateZ(0);
-//     }
-
-//     100% {
-//         -webkit-transform: translateZ(160px);
-//         transform: translateZ(160px);
-//     }
-// }
-// animation
 .modal-order{
     position: absolute;
     top: 10px;
@@ -62,6 +32,9 @@
 
     padding: 28px;
     width: 280px;
+    
+    animation: bounceInDown;
+    animation-duration: 500ms;
 
     background-color: var(--modal-background);
     border: 2px solid var(--modal-border-color);
