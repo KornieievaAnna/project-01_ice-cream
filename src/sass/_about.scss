@@ -1,9 +1,24 @@
 .about {
     background-color: var(--background-color);
+    max-width: 100%;
+    
+    @media screen and (min-width: 480px) {
+        max-width: 480px;
+    }
+    
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        max-width: 1200px;
+    }
 }
 
 .container-top {
     padding-top: 60px;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .about-text {
@@ -46,6 +61,11 @@
         width: 454px;
     }
     
+}
+
+.container {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .container-flex {
@@ -125,7 +145,7 @@
 
     @media screen and (min-width: 1200px) {
         text-align: start;
-        font-size: 16px;
+        font-size: 14px;
     }
 }
 
