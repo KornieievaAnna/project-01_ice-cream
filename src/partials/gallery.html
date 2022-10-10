@@ -1,0 +1,113 @@
+<section class="gallery-section" id="gallery">
+  <div class="container">
+    <div class="slideshow-container">
+      <h2 class="visually-hidden">Gallery</h2>
+
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <picture>
+          <source
+            srcset="
+              ./images/desktop/gallery1@1x.jpg,
+              ./images/desktop/gallery1@2x.jpg 2x
+            "
+            media="(min-width:1200px)"
+          />
+          <source
+            srcset="
+              ./images/tablet/gallery1@1x.jpg,
+              ./images/tablet/gallery1@2x.jpg 2x
+            "
+            media="(min-width:768px)"
+          />
+
+          <source
+            srcset="
+              ./images/mobile/gallery1@1x.jpg,
+              ./images/mobile/gallery1@2x.jpg 2x
+            "
+            media="(max-width:767px)"
+          />
+
+          <img
+            class="gallery-section__img"
+            src="./images/desktop/gallery1@1x.jpg"
+            alt="  
+              ice cream with berries"
+          />
+        </picture>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <picture>
+          <source
+            srcset="
+              ./images/desktop/gallery2@1x.jpg,
+              ./images/desktop/gallery2@2x.jpg 2x
+            "
+            media="(min-width:1200px)"
+          />
+          <source
+            srcset="
+              ./images/tablet/gallery2@1x.jpg,
+              ./images/tablet/gallery2@2x.jpg 2x
+            "
+            media="(min-width:768px)"
+          />
+
+          <source
+            srcset="./images/mobile/gallery2@1x.jpg"
+            media="(max-width:767px)"
+          />
+
+          <img
+            class="gallery-section__img"
+            src="#"
+            alt=" 
+            ice cream with sprinkles "
+          />
+        </picture>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+
+        <picture>
+          <source
+            srcset="
+              ./images/tablet/gallery3@1x.jpg,
+              ./images/tablet/gallery3@2x.jpg 2x
+            "
+            media="(min-width:768px)"
+          />
+
+          <source
+            srcset="./images/mobile/gallery3@1x.jpg"
+            media="(max-width:767px)"
+          />
+          <img
+            class="gallery-section__img"
+            src="#"
+            alt=" 
+            ice cream with strawberries"
+          />
+        </picture>
+      </div>
+
+      <!-- Next and previous buttons -->
+      <!-- <div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div> -->
+     
+  
+
+    <!-- The dots/circles -->
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+  </div>
+</section>
