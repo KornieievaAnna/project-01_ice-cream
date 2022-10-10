@@ -1,4 +1,4 @@
-<div class="backdrop is-hidden" data-modal-open>
+<div class="backdrop is-hidden" data-modal>
   <div class="modal-ingredients">
     <button type="button" class="modal-ingredients__button-closed" data-modal-close>
       <svg class="modal-ingredients__button-icon">
@@ -8,12 +8,19 @@
     <p class="modal-ingredients__title">Chocolate icecream</p>
     <div class="modal-ingredients__circle">
       <picture>
-        <source media="(min-width: 768px )"
-          srcset="/src/images/desktop/modalbuy4@1x.png 1x, /src/images/desktop/modalbuy4@2x.png 2x" />
-        <source media="(max-width: 767px )"
-          srcset="/src/images/mobile/modalbuy4@1x.png 1x, /src/images/mobile/modalbuy4@2x.png 2x" />
-        <img class="modal-ingredients__img" src="/src/images/mobile/modalbuy4@1x.png"
-          alt="an ice cream in a waffle spit" />
+        <source
+          media="(min-width: 768px )"
+          srcset="/src/images/desktop/modalbuy4@1x.png 1x, /src/images/desktop/modalbuy4@2x.png 2x"
+        />
+        <source
+          media="(max-width: 767px )"
+          srcset="/src/images/mobile/modalbuy4@1x.png 1x, /src/images/mobile/modalbuy4@2x.png 2x"
+        />
+        <img
+          class="modal-ingredients__img"
+          src="/src/images/mobile/modalbuy4@1x.png"
+          alt="an ice cream in a waffle spit"
+        />
       </picture>
     </div>
     <ul class="modal-ingredients__list">
@@ -72,17 +79,36 @@
     <form action="#" class="modal-order__form">
       <div class="modal-order__inputs modal-order__inputs_ingredients">
         <label class="modal-order__field modal-order__field_ingredients">
-          <input class="modal-order__input modal-order__input_ingredients" type="text" name="customer`s name"
-            aria-label="enter your name" placeholder="Name" pattern="[a-zA-zа-яА-яіІїЇєЄ]+" required />
+          <input
+            class="modal-order__input modal-order__input_ingredients"
+            type="text"
+            name="customer`s name"
+            aria-label="enter your name"
+            placeholder="Name"
+            pattern="[a-zA-zа-яА-яіІїЇєЄ]+"
+            required
+          />
         </label>
         <label class="modal-order__field modal-order__field_ingredients">
-          <input class="modal-order__input modal-order__input_ingredients" type="tel" name="customer`s phone number"
-            aria-label="enter your phone number" placeholder="Phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="12"
-            title="123-456-7890" required />
+          <input
+            class="modal-order__input modal-order__input_ingredients"
+            type="tel"
+            name="customer`s phone number"
+            aria-label="enter your phone number"
+            placeholder="Phone"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            maxlength="12"
+            title="123-456-7890"
+            required
+          />
         </label>
         <label class="modal-order__field modal-order__field_ingredients-comment">
-          <textarea class="modal-order__input modal-order__input_third modal-order__input_ingredients"
-            name="customer`s comment" aria-label="enter your message" placeholder="Comment"></textarea>
+          <textarea
+            class="modal-order__input modal-order__input_third modal-order__input_ingredients"
+            name="customer`s comment"
+            aria-label="enter your message"
+            placeholder="Comment"
+          ></textarea>
         </label>
       </div>
       <button class="modal-order__button" type="submit">Submit</button>
