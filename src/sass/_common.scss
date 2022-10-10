@@ -100,3 +100,9 @@ body {
   position: fixed;
   transform: scale(0);
 }
+
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
