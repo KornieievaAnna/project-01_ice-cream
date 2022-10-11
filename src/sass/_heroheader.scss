@@ -61,9 +61,10 @@
     border-radius: 8px;
     width: 62px;
     height: 24px;
+    transition: color var(--cubic), border-color var(--cubic);
 
     &:hover, &:focus {
-        border: 2px solid var(--button-active-border-color);
+        border-color: var(--button-active-border-color);
     }
 
     &:focus {
@@ -71,7 +72,7 @@
     }
 
     &:disabled {
-        border: 2px solid var(--button-disable-border-color);
+        border-color: var(--button-disable-border-color);
     }
 }
 .navigation-pages__link_decor {
@@ -80,6 +81,7 @@
     text-decoration: underline;
     width: auto;
     color: var(--accent-color);
+    transition: color var(--cubic);
 
     &:hover, &:focus {
         border: none;
@@ -191,6 +193,7 @@
         font-size: 14px;
         line-height: 1.21;
         color: var(--text-color-dark);
+        transition: background var(--cubic), color var(--cubic);
 
         &:hover, &:focus {
             background: var(--button-active-color);
@@ -337,6 +340,7 @@
         font-size: 16px;
         line-height: 1.25;
         color: var(--text-color-light);
+        transition: color var(--cubic);
 
         &:hover, &:focus {
             color: var(--accent-color);
@@ -473,3 +477,130 @@
     background-image: url(../images/desktop/desctop-dots@2x.png);
   }
 }
+// --------------------------------------- ANIMATION ---------------------------------------
+.logo {
+    border-radius: 100%;
+        -webkit-animation: pulsing 4s infinite;
+        animation: pulsing 4s infinite;
+    }
+    @-webkit-keyframes pulsing {
+        0% {
+            -webkit-transform: scale(0.5, 0.5);
+            transform: scale(0.5, 0.5)
+        }
+        50% {
+            -webkit-transform: scale(1.0, 1.0);
+            transform: scale(1.0, 1.0);
+        }
+        100% {
+            -webkit-transform: scale(0.5, 0.5);
+            transform: scale(0.5, 0.5);
+        }
+    }
+    @keyframes pulsing {
+        0% {
+            -webkit-transform: scale(0.5, 0.5);
+            transform: scale(0.5, 0.5)
+        }
+        50% {
+            -webkit-transform: scale(1.0, 1.0);
+            transform: scale(1.0, 1.0);
+        }
+        100% {
+            -webkit-transform: scale(0.5, 0.5);
+            transform: scale(0.5, 0.5);
+        }
+}
+.hero-pic-box__pictures {
+    @keyframes spin {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    img {
+        animation: spin 5s linear 0s infinite;
+    }
+}
+.hero-pic-box__arrow-icon {
+    animation-duration: 3s;
+        animation-name: slidein;
+    }
+    
+    @keyframes slidein {
+        from {
+            margin-left: 100%;
+            width: 300%;
+        }
+    
+        to {
+            margin-left: 0%;
+            width: 100%;
+        }
+}
+    
+.hero-pic-box__desc {
+            animation-duration: 3s;
+            animation-name: slidein;
+        }
+    
+        @keyframes slidein {
+            from {
+                margin-left: 100%;
+                width: 300%;
+            }
+    
+            to {
+                margin-left: 0%;
+                width: 100%;
+            }
+}
+.hero-pic-aside__ice-cream {
+    animation-name: ice-cream;
+    animation-duration: 4s;
+    animation-timing-function: cubic-bezier(.1, -.6, .2, 0);
+}
+
+@-webkit-keyframes ice-cream {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes ice-cream {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes ice-cream {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes ice-cream {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+// --------------------------------------- ANIMATION ---------------------------------------
