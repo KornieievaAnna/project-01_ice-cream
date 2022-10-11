@@ -820,19 +820,14 @@
   min-width: 60px;
   min-height: 20px;
 
-  cursor: pointer;
-
   align-items: center;
-  //   transition: min-width var(--cubic), min-height var(--cubic);
 
   &:focus {
-    min-width: 64px;
-    min-height: 28px;
+    transform: scale(1.25);
   }
 
   &:hover {
-    min-width: 64px;
-    min-height: 24px;
+    transform: scale(1.15);
   }
 }
 
@@ -840,13 +835,4 @@
   width: 40px;
   height: 15px;
   transition: width var(--cubic), height var(--cubic);
-
-  .products__button:focus & {
-    width: 50px;
-    height: 20px;
-  }
-
-  .products__button:hover & {
-    width: 50px;
-  }
 }
