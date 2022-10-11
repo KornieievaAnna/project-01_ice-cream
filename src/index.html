@@ -1,128 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IceCream</title>
+    <link rel="stylesheet" href="./sass/index.scss" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Montserrat:wght@400;500;600;700;800;900&family=Roboto:wght@700&family=Seymour+One&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>IceCream</title>
-  <link rel="stylesheet" href="./sass/index.scss" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Montserrat:wght@400;500;600;700;800;900&family=Roboto:wght@700&family=Seymour+One&display=swap"
-    rel="stylesheet" />
+    <!-- Links for Animate -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
-  <!-- Links for Animate -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Links for Slick -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <script type="module" src="./js/simplelightbox.js"></script>
+    <script type="module" src="./index.js"></script>
 
-  <!-- Links for Slick -->
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-  <script type="module" src="./js/simplelightbox.js"></script>
-  <script type="module" src="./index.js"></script>
+    <!-- Links for Slider -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
 
-  <!-- Links for Slider -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <!-- Mobile menu -->
+    <script src="./js/mobile-menu.js"></script>
 
+    <style>
+      * {
+        cursor: url(./images/cursor.png), auto;
+      }
+    </style>
+  </head>
 
+  <body>
+    <!-- Kharchenko Oksana, Semenovska Oksana -->
+    <include src="./partials/heroheader.html"></include>
+    <main>
+      <!-- Kornieieva Anna -->
+      <include src="./partials/mobilemenu.html"></include>
+      <!-- Iagor -->
+      <include src="./partials/products.html"></include>
+      <!-- Sodel Oksana -->
+      <include src="./partials/about.html"></include>
+      <!-- Antonio Bukin -->
+      <include src="./partials/advantages.html"></include>
+      <!-- Iryna Artymuk, Iakiv Pekarskyi -->
+      <include src="./partials/gallery-test.html"></include>
+      <!-- Daria Babii -->
+      <include src="./partials/customerrviews.html"></include>
+      <!-- Oksana Khymych -->
+      <include src="./partials/contacts.html"></include>
+    </main>
+    <!-- Semenovska Oksana -->
+    <include src="./partials/footer.html"></include>
+    <!-- Olena Semenenko -->
+    <include src="./partials/buynowfirstmodal.html"></include>
+    <!-- Olena Semenenko -->
+    <include src="./partials/buynowmodal.html"></include>
+    <!-- Yaroslav Ashchaulov -->
+    <include src="./partials/readmoremodal.html"></include>
+    <!-- Yaroslav Ashchaulov -->
+    <include src="./partials/ourlocationsmodal.html"></include>
+    <!-- Yaroslav Ashchaulov -->
+    <include src="./partials/franchisemodal.html"></include>
 
-  <!-- Mobile menu -->
-  <script src="./js/mobile-menu.js"></script>
+    <script type="module" src="./index.js"></script>
 
-  <style>
-    * {
-      cursor: url(./images/cursor.png), auto;
-    }
-  </style>
-</head>
+    <!-- Links for Slick -->
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
 
-<body>
-  <!-- Kharchenko Oksana, Semenovska Oksana -->
-  <include src="./partials/heroheader.html"></include>
-  <main>
-    <!-- Kornieieva Anna -->
-    <include src="./partials/mobilemenu.html"></include>
-    <!-- Iagor -->
-    <include src="./partials/products.html"></include>
-    <!-- Sodel Oksana -->
-    <include src="./partials/about.html"></include>
-    <!-- Antonio Bukin -->
-    <include src="./partials/advantages.html"></include>
-    <!-- Iryna Artymuk, Iakiv Pekarskyi -->
-    <include src="./partials/gallery-test.html"></include>
-    <!-- Daria Babii -->
-    <include src="./partials/customerrviews.html"></include>
-    <!-- Oksana Khymych -->
-    <include src="./partials/contacts.html"></include>
-  </main>
-  <!-- Semenovska Oksana -->
-  <include src="./partials/footer.html"></include>
-  <!-- Olena Semenenko -->
-  <include src="./partials/buynowfirstmodal.html"></include>
-  <!-- Olena Semenenko -->
-  <include src="./partials/buynowmodal.html"></include>
-  <!-- Yaroslav Ashchaulov -->
-  <include src="./partials/readmoremodal.html"></include>
-  <!-- Yaroslav Ashchaulov -->
-  <include src="./partials/ourlocationsmodal.html"></include>
-  <!-- Yaroslav Ashchaulov -->
-  <include src="./partials/franchisemodal.html"></include>
+    <!-- Links for Slider -->
 
-  <!-- Links for Slick -->
-  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: false,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+          dynamicBullets: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
 
-  <!-- Links for Slider -->
+        loop: true,
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+        autoplay: {
+          delay: 2000,
+          stopOnLastSlide: false,
+          disableOnInteraction: false,
+        },
+        speed: 2000,
+        crossFade: true,
+      });
+    </script>
 
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      effect: "coverflow",
-      grabCursor: true,
-      centeredSlides: true,
-      slidesPerView: "auto",
-      coverflowEffect: {
-        rotate: 50,
-        stretch: 0,
-        depth: 100,
-        modifier: 1,
-        slideShadows: false,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-        dynamicBullets: true,
+    <script src="./js/slider.js"></script>
 
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-
-      loop: true,
-
-      autoplay: {
-        delay: 2000,
-        stopOnLastSlide: false,
-        disableOnInteraction: false,
-
-      },
-      speed: 2000,
-      crossFade: true,
-
-
-
-    });
-  </script>
-
-  <script src="./js/slider.js"></script>
-
-  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-</body>
-
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+  </body>
 </html>

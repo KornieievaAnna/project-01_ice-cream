@@ -1,6 +1,10 @@
-<div class="backdrop is-hidden" data-modal>
+<div class="backdrop is-hidden" data-modal-1>
   <div class="modal-ingredients">
-    <button type="button" class="modal-ingredients__button-closed" data-modal-close>
+    <button
+      type="button"
+      class="modal-ingredients__button-closed"
+      data-modal-close-1
+    >
       <svg class="modal-ingredients__button-icon">
         <use href="/src/images/sprite.svg#icon-close_black"></use>
       </svg>
@@ -10,11 +14,17 @@
       <picture>
         <source
           media="(min-width: 768px )"
-          srcset="/src/images/desktop/modalbuy4@1x.png 1x, /src/images/desktop/modalbuy4@2x.png 2x"
+          srcset="
+            /src/images/desktop/modalbuy4@1x.png 1x,
+            /src/images/desktop/modalbuy4@2x.png 2x
+          "
         />
         <source
           media="(max-width: 767px )"
-          srcset="/src/images/mobile/modalbuy4@1x.png 1x, /src/images/mobile/modalbuy4@2x.png 2x"
+          srcset="
+            /src/images/mobile/modalbuy4@1x.png 1x,
+            /src/images/mobile/modalbuy4@2x.png 2x
+          "
         />
         <img
           class="modal-ingredients__img"
@@ -102,7 +112,9 @@
             required
           />
         </label>
-        <label class="modal-order__field modal-order__field_ingredients-comment">
+        <label
+          class="modal-order__field modal-order__field_ingredients-comment"
+        >
           <textarea
             class="modal-order__input modal-order__input_third modal-order__input_ingredients"
             name="customer`s comment"
