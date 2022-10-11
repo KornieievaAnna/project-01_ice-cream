@@ -1,4 +1,4 @@
-$('.one-ttime').slick({
+$('.one-time').slick({
   dots: true,
   infinite: true,
   speed: 300,

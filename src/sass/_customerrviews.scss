@@ -10,6 +10,8 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .container {
@@ -174,14 +176,17 @@
 
 @media screen and (min-width: 480px) {
   .cr-section {
+    width: 480px;
     padding-top: 303px;
     padding-bottom: 393px;
     // background-color: var(--text-color-light);
-    max-width: 100%;
+    // max-width: 480px;
     background-image: url(../images/desktop/gallery_background2x.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .cr__image {
@@ -356,6 +361,7 @@
 
 @media screen and (min-width: 768px) {
   .cr-section {
+    width: 768px;
     padding-top: 218px;
     padding-bottom: 384px;
     background-image: url(../images/tablet/dcg-ice-cream-t.png);
@@ -396,11 +402,12 @@
 
 @media screen and (min-width: 1200px) {
   .cr-section {
+    width: 1200px;
     padding-top: 40px;
     padding-bottom: 50px;
     background-image: url(../images/desktop/gallery_background2x.png);
     background-position: center;
-    background-size: 1200px;
+    // background-size: 1200px;
     background-repeat: no-repeat;
   }
 
