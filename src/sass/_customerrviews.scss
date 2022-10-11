@@ -1,0 +1,420 @@
+//  ------------- from 0 to 479 resposive----------------
+
+@media screen and (max-width: 479px) {
+  .cr-section {
+    padding-top: calc(303 / 480 * 100vw);
+    padding-bottom: calc(393 / 480 * 100vw);
+    background-color: var(--text-color-light);
+    max-width: 100%;
+    background-image: url(../images/mobile/bcg-ice-cream-m.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .container {
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cr__image {
+    width: calc(85 / 480 * 100vw);
+    height: calc(85 / 480 * 100vw);
+    border-radius: 50%;
+    margin-bottom: calc(32 / 480 * 100vw);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cr-text {
+    padding-top: calc(34 / 480 * 100vw);
+    padding-bottom: calc(34 / 480 * 100vw);
+    padding-left: calc(39 / 480 * 100vw);
+    padding-right: calc(39 / 480 * 100vw);
+
+    background-color: var(--background-color);
+    border-radius: 10px;
+    width: calc(280 / 480 * 100vw);
+    height: calc(256 / 480 * 100vw);
+
+    font-size: calc(12 / 480 * 100vw);
+    line-height: calc(31 / 12);
+    text-align: center;
+
+    color: var(--text-color-light);
+    margin-bottom: calc(30 / 480 * 100vw);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cr-name {
+    display: block;
+    font-weight: 500;
+    font-size: calc(20 / 480 * 100vw);
+    line-height: 186%;
+    text-align: center;
+    color: var(--text-color-dark);
+  }
+
+  .cr-wrapper {
+    margin-bottom: calc(14 / 480 * 100vw);
+  }
+
+  // -----------------------------DOTS--------------------
+  .slick-prev,
+  .slick-next {
+    font-size: 0;
+    line-height: 0;
+
+    position: absolute;
+    top: 50%;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+
+    cursor: pointer;
+
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+  }
+
+  .slick-dotted.slick-slider {
+    margin-bottom: -20px;
+  }
+
+  .slick-dots {
+    position: absolute;
+    bottom: -25px;
+
+    display: block;
+
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+
+    text-align: center;
+  }
+  .slick-dots li {
+    position: relative;
+
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+
+    cursor: pointer;
+  }
+  .slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+
+    cursor: pointer;
+
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+  }
+  .slick-dots li button:hover,
+  .slick-dots li button:focus {
+    outline: none;
+  }
+  .slick-dots li button:hover:before,
+  .slick-dots li button:focus:before {
+    opacity: 1;
+  }
+  .slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 40px;
+    line-height: 20px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 12px;
+    height: 12;
+    border-radius: 50%;
+
+    content: '';
+    text-align: center;
+
+    opacity: 1;
+    background-color: #d9d9d9;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .slick-dots li.slick-active button:before {
+    opacity: 1;
+    background-color: #84a178;
+  }
+}
+
+// ------------- from 480 to 767px adaptive----------------
+
+@media screen and (min-width: 480px) {
+  .cr-section {
+    padding-top: 303px;
+    padding-bottom: 393px;
+    background-color: var(--text-color-light);
+    max-width: 100%;
+    background-image: url(../images/mobile/bcg-ice-cream-m.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .cr__image {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    margin-bottom: 32px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cr-text {
+    padding-top: 34px;
+    padding-bottom: 34px;
+    padding-left: 39px;
+    padding-right: 39px;
+
+    background-color: var(--background-color);
+    border-radius: 10px;
+    width: 280px;
+    height: 256px;
+
+    font-size: 12px;
+    line-height: calc(31 / 12);
+    text-align: center;
+
+    color: var(--text-color-light);
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cr-name {
+    display: block;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 186%;
+    text-align: center;
+    color: var(--text-color-dark);
+  }
+
+  .cr-wrapper {
+    margin-bottom: 14px;
+  }
+
+  // ------------------------------DOTS-------------------------
+
+  // .cr-own-dot-list {
+  //   justify-content: center;
+  //   align-items: center;
+  //   margin-top: -23px;
+  //   column-gap: 18px;
+  //   display: flex;
+  //   position: absolute;
+  //   left: 189px;
+  // }
+
+  // .cr-own-dot-icon {
+  //   fill: #d9d9d9;
+  //   opacity: 1;
+  // }
+
+  .slick-prev,
+  .slick-next {
+    font-size: 0;
+    line-height: 0;
+
+    position: absolute;
+    top: 50%;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+
+    cursor: pointer;
+
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+  }
+
+  .slick-dotted.slick-slider {
+    margin-bottom: -100px;
+  }
+
+  .slick-dots {
+    position: absolute;
+    bottom: -25px;
+
+    display: block;
+
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+
+    text-align: center;
+  }
+  .slick-dots li {
+    position: relative;
+
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+
+    cursor: pointer;
+  }
+  .slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+
+    cursor: pointer;
+
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+  }
+  .slick-dots li button:hover,
+  .slick-dots li button:focus {
+    outline: none;
+  }
+  .slick-dots li button:hover:before,
+  .slick-dots li button:focus:before {
+    opacity: 1;
+  }
+  .slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 40px;
+    line-height: 20px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 12px;
+    height: 12;
+    border-radius: 50%;
+
+    content: '';
+    text-align: center;
+
+    opacity: 1;
+    background-color: #d9d9d9;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .slick-dots li.slick-active button:before {
+    opacity: 1;
+    background-color: #84a178;
+  }
+}
+
+// ------------- from 768 to 1199 adaptive----------------
+
+@media screen and (min-width: 768px) {
+  .cr-section {
+    padding-top: 218px;
+    padding-bottom: 384px;
+    background-image: url(../images/tablet/dcg-ice-cream-t.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .cr__image {
+    margin-bottom: 28px;
+  }
+  .cr-text {
+    padding-top: 28px;
+    padding-bottom: 28px;
+    padding-left: 80px;
+    padding-right: 80px;
+
+    border-radius: 24px;
+    width: 705px;
+    height: 138px;
+
+    font-size: 14px;
+    line-height: 186%;
+
+    margin-bottom: 32px;
+  }
+
+  .cr-name {
+    font-size: 16px;
+  }
+
+  .cr-wrapper {
+    margin-bottom: 32px;
+  }
+}
+
+// ------------- from 1200 adaptive----------------
+
+@media screen and (min-width: 1200px) {
+  .cr-section {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-image: url(../images/desktop/bcg-ice-cream-d.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .cr__image {
+    margin-bottom: 32px;
+  }
+
+  .cr-text {
+    padding-top: 39px;
+    padding-bottom: 47px;
+    padding-left: 109px;
+    padding-right: 109px;
+
+    width: 968px;
+    font-size: 16px;
+  }
+}

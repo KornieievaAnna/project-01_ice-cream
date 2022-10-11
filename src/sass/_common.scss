@@ -49,10 +49,18 @@ body {
   letter-spacing: 0.04em;
 }
 
-.container {
-  width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 @media screen and (min-width: 480px) {
@@ -60,6 +68,8 @@ body {
     width: 480px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -78,5 +88,16 @@ body {
 @mixin font($fw, $fs, $lh) {
   font-weight: $fw;
   font-size: $fs;
-  line-height: $lh/$fs;
+  line-height:calc($lh / $fs);
+}
+
+.vis-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
 }

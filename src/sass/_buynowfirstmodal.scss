@@ -1,0 +1,283 @@
+.backdrop{
+    position: fixed;
+    z-index: 1000;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    overflow: scroll;
+    transition: opacity var(--cubic), visibility var(--cubic);
+    background-color: transparent;
+}
+
+// is-hidden
+.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+
+
+.modal-order{
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 28px;
+    width: 280px;
+    
+    animation: bounceInDown;
+    animation-duration: 500ms;
+
+    background-color: var(--modal-background);
+    border: 2px solid var(--modal-border-color);
+    border-radius: 10px;
+
+    &__title{
+        @include font (400, 16px, 24px);
+        font-family: 'Seymour One';
+          
+    }
+}
+
+
+
+
+.modal-order__button-closed{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: transparent;
+    border: none;
+}
+.modal-order__button-icon{
+    width: 16px;
+    height: 16px;
+    
+}
+
+.modal-order__form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+// checkbox
+.modal-order__checkbox{
+    margin-top: 20px;
+}
+
+.modal-order__checkbox-thumb{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 20px;
+    margin-top: 84px;
+    
+    width: 132px;
+    height: 135px;
+
+    @include font (700, 16px, 20px);
+    text-transform: uppercase;
+    background-color: transparent;
+    border-radius: 10px;
+
+        &_first{
+            border: 2px solid var(--modal-item-green);
+
+        }
+        &_second{
+            border: 2px solid var(--modal-item-yellow);
+
+        }
+        &_third{
+            border: 2px solid var(--modal-item-orange);
+
+        }
+
+}
+.modal-order__checkbox-circle{
+    position: absolute;
+    top: -50%;
+    left: -1%;
+    display: block;
+    width: 131px;
+    height: 130px;
+    border-radius: 50%;
+    
+
+        &_first{
+            background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+            box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+            
+        }
+        &_second{
+            background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+            box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+        }
+        &_third{
+            background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
+            box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+        }
+}
+.modal-order__custom-checkbox{
+    position: absolute;
+    bottom: 7px;
+    left: 0;
+}
+
+.modal-order__check:checked+.modal-order__checkbox-thumb_first{
+    background-color: var(--modal-item-green);
+}
+.modal-order__check:checked+.modal-order__checkbox-thumb_second {
+    background-color: var(--modal-item-yellow);
+}
+.modal-order__check:checked+.modal-order__checkbox-thumb_third {
+    background-color: var(--modal-item-orange);
+}
+
+// inputs
+.modal-order__inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    margin-top: 24px;
+    margin-bottom: 24px;
+
+}
+.modal-order__field{
+    display: inline-flex;
+    width: 224px;
+    
+   
+        &_first{
+            height: 32px;
+        }
+        &_second{
+            height: 32px;
+        }
+        &_third{
+            height: 65px;
+        }
+        
+    
+}
+.modal-order__input{
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--modal-input-border);
+    border-radius: 10px;
+    background-color: rgba(248, 210, 78, 0.1);
+    padding: 12px 8px;
+        &_third{
+            resize: none;
+            overflow-x: hidden;
+        }
+        &::placeholder{
+            font-family: 'Montserrat';
+            @include font (400, 12px, 17px);
+            color: var (--text-color-dark);
+            transform: translateX(0) scale(1);
+            transition: transform var(--cubic), color var(--cubic) ;
+        }
+        &:focus{
+            outline: none;
+        }
+}
+.modal-order__input:focus::placeholder{
+    color: var(--button-active-color);
+    transform: translateX(10%) scale(1.1);
+}
+// button
+.modal-order__button{
+    padding: 12px 34px;
+    background-color: var(--button-color) ;
+    color: var(--button-text-color);
+    border-radius: 10px;
+    @include font (600, 14px, 17px);
+    border: none;
+    transition: color var(--cubic), background-color var(--cubic);
+    &:hover {
+            color: var(--text-color-dark);
+            background-color: var(--button-active-color);
+        }
+    
+        &:focus {
+            color: var(--button-active-text-color);
+            background-color: var(--button-active-color);
+        }
+    
+        &:disabled {
+            color: var(--button-text-color);
+            background-color: var(--button-disable-color);
+        }
+}
+
+
+
+
+// media
+
+
+@media screen and (min-width: 768px) {
+    .modal-order {
+        width: 568px;
+        padding: 32px;
+        
+    }
+
+    .modal-order__chechboxes {
+        display: flex;
+        gap: 32px;
+
+    }
+
+    .modal-order__inputs {
+        margin-top: 40px;
+        margin-bottom: 32px;
+    }
+        .modal-order__field {
+            width: 368px;
+            gap: 16px;
+    
+            &_first {
+                height: 42px;
+            }
+    
+            &_second {
+                height: 42px;
+            }
+    
+            &_third {
+                height: 84px;
+            }
+        }
+        .modal-order__input::placeholder{
+            @include font (400, 14px, 20px);
+
+        }
+        .modal-order__button-icon {
+            width: 20px;
+            height: 20px;
+
+        }
+        
+}
+@media screen and (min-width: 1200px){
+    .modal-order{
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+}
