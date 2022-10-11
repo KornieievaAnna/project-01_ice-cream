@@ -103,7 +103,7 @@
   position: absolute;
   left: 1px;
   bottom: 1px;
-  z-index: 455;
+  z-index: 1;
   width: 100%;
   height: 50px;
   background-image: url(../images/mobile/mobile-dots@1x.png);
@@ -126,7 +126,7 @@
   }
   .hero-pic-aside__ice-cream {
     position: absolute;
-    z-index: 470;
+    z-index: 3;
     bottom: 10%;
     left: 25%;
     width: 170px;
@@ -148,7 +148,7 @@
   }
   .hero-pic-aside__ice-cream {
     position: absolute;
-    z-index: 470;
+    z-index: 3;
     bottom: 10%;
     left: 25%;
     width: 170px;
@@ -277,7 +277,7 @@
   .hero-pic-box {
     display: flex;
     align-items: center;
-    z-index: 460;
+    z-index: 2;
     gap: 33px;
     position: absolute;
     left: 32px;
@@ -296,7 +296,7 @@
   }
   .hero-pic-aside__ice-cream {
     position: absolute;
-    z-index: 470;
+    z-index: 3;
     bottom: 13%;
     left: 47%;
     width: 270px;
@@ -305,7 +305,7 @@
   .hero-dots {
     left: 1px;
     bottom: 1px;
-    z-index: 455;
+    z-index: 1;
     width: 100%;
     height: 67px;
     background-image: url(../images/tablet/tablet-dots@1x.png);
@@ -438,7 +438,7 @@
     display: flex;
     align-items: center;
     position: absolute;
-    z-index: 460;
+    z-index: 2;
     gap: 14px;
     left: 17px;
     bottom: 65px;
@@ -458,7 +458,7 @@
   }
   .hero-pic-aside__ice-cream {
     position: absolute;
-    z-index: 470;
+    z-index: 1;
     bottom: 10%;
     left: 47%;
     width: 484px;
@@ -467,7 +467,7 @@
   .hero-dots {
     left: 1px;
     bottom: 1px;
-    z-index: 455;
+    z-index: 1;
     width: 100%;
     height: 384px;
     background-image: url(../images/desktop/desctop-dots@1x.png);

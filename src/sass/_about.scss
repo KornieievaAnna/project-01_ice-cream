@@ -19,6 +19,7 @@
 
 .container-top {
   padding-top: 60px;
+  padding-bottom: 20px;
   margin-left: 0;
   margin-right: 0;
 }
@@ -196,8 +197,6 @@
     margin-right: 0;
   }
   @media screen and (min-width: 1200px) {
-    margin-left: 0;
-    margin-right: 0;
   }
 }
 

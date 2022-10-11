@@ -6,6 +6,9 @@ import './js/mobile-menu';
 import "./js/modal";
 import "./js/slide";
 import "./js/slider";
+import "./js/modalbuynow2";
+import "./js/modalreadmore";
+
 
 
 
