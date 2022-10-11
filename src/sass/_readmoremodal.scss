@@ -10,7 +10,7 @@
   transition: visibility var(--cubic), opacity var(--cubic);
 }
 
-.backdrop .is-hidden {
+.backdrop.is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
