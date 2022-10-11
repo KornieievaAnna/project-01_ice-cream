@@ -6,7 +6,7 @@
     padding-bottom: calc(393 / 480 * 100vw);
     background-color: var(--text-color-light);
     max-width: 100%;
-    background-image: url(../images/mobile/bcg-ice-cream-m.png);
+    background-image: url(../images/desktop/gallery_background2x.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -176,9 +176,9 @@
   .cr-section {
     padding-top: 303px;
     padding-bottom: 393px;
-    background-color: var(--text-color-light);
+    // background-color: var(--text-color-light);
     max-width: 100%;
-    background-image: url(../images/mobile/bcg-ice-cream-m.png);
+    background-image: url(../images/desktop/gallery_background2x.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -396,11 +396,11 @@
 
 @media screen and (min-width: 1200px) {
   .cr-section {
-    padding-top: 150px;
-    padding-bottom: 150px;
-    background-image: url(../images/desktop/bcg-ice-cream-d.png);
+    padding-top: 40px;
+    padding-bottom: 50px;
+    background-image: url(../images/desktop/gallery_background2x.png);
     background-position: center;
-    background-size: cover;
+    background-size: 1200px;
     background-repeat: no-repeat;
   }
 
