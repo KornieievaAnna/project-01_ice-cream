@@ -49,7 +49,6 @@ body {
   letter-spacing: 0.04em;
 }
 
-
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -61,6 +60,12 @@ body {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
+}
+@media screen and (max-width: 479px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -76,11 +81,15 @@ body {
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
+    padding-left: 15px;
+    padding-right: 15px;
     width: 1200px;
   }
 }
@@ -88,7 +97,7 @@ body {
 @mixin font($fw, $fs, $lh) {
   font-weight: $fw;
   font-size: $fs;
-  line-height:calc($lh / $fs);
+  line-height: calc($lh / $fs);
 }
 
 .vis-hidden {

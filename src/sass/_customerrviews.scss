@@ -1,8 +1,10 @@
 @media screen and (max-width: 479px) {
   .cr-section {
-    padding-top: calc(303 / 480 * 100vw);
-    padding-bottom: calc(393 / 480 * 100vw);
-    background-color: var(--text-color-light);
+    // padding-top: calc(303 / 480 * 100vw);
+    padding-top: 0;
+    // padding-bottom: calc(393 / 480 * 100vw);
+    padding-bottom: 115px;
+    // background-color: var(--text-color-light);
     max-width: 100%;
     background-image: url(../images/desktop/gallery_background2x.png);
     background-repeat: no-repeat;
@@ -175,8 +177,8 @@
 @media screen and (min-width: 480px) {
   .cr-section {
     width: 480px;
-    padding-top: 303px;
-    padding-bottom: 393px;
+    padding-top: 0;
+    padding-bottom: 115px;
     // background-color: var(--text-color-light);
     // max-width: 480px;
     background-image: url(../images/desktop/gallery_background2x.png);
@@ -360,8 +362,8 @@
 @media screen and (min-width: 768px) {
   .cr-section {
     width: 768px;
-    padding-top: 218px;
-    padding-bottom: 384px;
+    padding-top: 25px;
+    padding-bottom: 119px;
     background-image: url(../images/tablet/dcg-ice-cream-t.png);
     background-position: center;
     background-size: cover;
