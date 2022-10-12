@@ -8,6 +8,7 @@ import "./js/modal-1";
 import "./js/modal-2";
 import "./js/modal-3";
 import "./js/modal-4";
+import "./js/modal-5";
 import "./js/slide";
 import "./js/slider";
 import "./js/modalbuynow2";
