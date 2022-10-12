@@ -7,26 +7,26 @@
   background-color: #fff;
 
   @media screen and (max-width: 479px) {
-    background-image: url(../images/products/mobile/background_mobile_1_1x.png);
+    background-image: url(../images/products/desktop/desktop_bg_1x.png);
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       .products {
-        background-image: url(../images/products/mobile/background_mobile_1_2x.png);
+        background-image: url(../images/products/desktop/desktop_bg_2x.png);
       }
     }
   }
 
   @media screen and (min-width: 480px) {
     width: 480px;
-    background-image: url(../images/products/tablet/background_tablet_1x.png);
+    background-image: url(../images/products/desktop/desktop_bg_1x.png);
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       .products {
-        background-image: url(../images/products/tablet/background_tablet_2x.png);
+        background-image: url(../images/products/desktop/desktop_bg_2x.png);
       }
     }
   }
