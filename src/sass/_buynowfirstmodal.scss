@@ -57,6 +57,10 @@
   right: 8px;
   background-color: transparent;
   border: none;
+    &:hover,
+    &:focus {
+      fill: var(--button-color);
+    }
 }
 .modal-order__button-icon {
   width: 16px;

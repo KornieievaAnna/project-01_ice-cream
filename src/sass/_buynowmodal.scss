@@ -39,6 +39,11 @@
   right: 20px;
   background-color: transparent;
   border: none;
+    &:hover,
+    &:focus {
+      fill: var(--button-color);
+    }
+     
 }
 
 .modal-ingredients__button-icon {
@@ -84,7 +89,9 @@
   width: 53px;
   height: 72px;
   border: 2px solid #9cbe8f;
+  padding-bottom: 8px;
   border-radius: 40px;
+  
 }
 
 .modal-ingredients__value {
@@ -105,8 +112,11 @@
 }
 
 .modal-ingredients__units {
+  text-align: center;
   @include font(400, 10px, 12px);
   color: var(--text-color-dark);
+  
+  
 }
 
 // table
@@ -152,7 +162,15 @@
 .modal-order__input_ingredients::placeholder {
   @include font(400, 14px, 20px);
 }
-
+@media screen  and (max-width: 767px) {
+  .modal-ingredients__units{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 38px;
+  }
+  
+}
 @media screen and (min-width: 768px) {
   .modal-ingredients {
     width: 568px;

@@ -1,4 +1,4 @@
-.backdrop {
+.backdrop__read-more {
   position: fixed;
   top: 0;
   left: 0;
@@ -10,17 +10,17 @@
   transition: visibility var(--cubic), opacity var(--cubic);
 }
 
-.backdrop .is-hidden {
+.is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
 }
+.backdrop__read-more.is-hidden .read-more-modal{
+  transform: translateY(-100%) scale(0);
+}
 
 .read-more-modal {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   width: 280px;
   height: 459px;
   background-color: white;
@@ -78,11 +78,25 @@
   color: var(--text-color-dark);
 }
 
+@media screen and (max-width: 767px) {
+  .read-more-modal {
+    top: 20px;
+    left: 50vw;
+    transform: translate(-50%, 0) scale(1);
+    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+}
+
 @media screen and (min-width: 768px) {
   .read-more-modal {
     width: 568px;
     height: 449px;
     padding: 32px 60px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .read-more-modal__icon {
