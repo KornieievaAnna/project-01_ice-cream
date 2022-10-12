@@ -1,4 +1,5 @@
 .contacts {
+  // background-color: #fff;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -239,8 +240,8 @@
     background-image: linear-gradient(
         rgba(255, 255, 255, 0.1) 0 168px,
         rgb(132, 161, 120) 168px 100%
-      ),
-      url('../images/tablet/gallery_background1x.png');
+      );
+      // url('../images/tablet/gallery_background1x.png');
     padding-top: 62px;
     padding-bottom: 40px;
     &__text {
@@ -286,17 +287,17 @@
     flex-direction: row;
   }
 }
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
-  screen and (min-resolution: 192dpi) and (min-width: 768px),
-  screen and (min-resolution: 2dppx) and (min-width: 768px) {
-  .contacts {
-    background-image: linear-gradient(
-        rgba(255, 255, 255, 0.1) 0 168px,
-        rgb(132, 161, 120) 168px 100%
-      ),
-      url('../images/tablet/gallary_background2x.png');
-  }
-}
+// @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+//   screen and (min-resolution: 192dpi) and (min-width: 768px),
+//   screen and (min-resolution: 2dppx) and (min-width: 768px) {
+//   .contacts {
+//     background-image: linear-gradient(
+//         rgba(255, 255, 255, 0.1) 0 168px,
+//         rgb(132, 161, 120) 168px 100%
+//       ),
+//       url('../images/tablet/gallary_background2x.png');
+//   }
+// }
 
 @media screen and (min-width: 1200px) {
   .contacts {
@@ -304,8 +305,8 @@
     background-image: linear-gradient(
         rgba(255, 255, 255, 0.1) 0 194px,
         rgb(132, 161, 120) 194px 100%
-      ),
-      url('../images/desktop/gallery_background1x.png');
+      );
+      // url('../images/desktop/gallery_background1x.png');
     padding-top: 50px;
     padding-bottom: 120px;
 
@@ -337,14 +338,14 @@
     justify-content: center;
   }
 }
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
-  screen and (min-resolution: 192dpi) and (min-width: 1200px),
-  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
-  .contacts {
-    background-image: linear-gradient(
-        rgba(255, 255, 255, 0.1) 0 194px,
-        rgb(132, 161, 120) 194px 100%
-      ),
-      url('../images/desktop/gallery_background2x.png');
-  }
-}
+// @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+//   screen and (min-resolution: 192dpi) and (min-width: 1200px),
+//   screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+//   .contacts {
+//     background-image: linear-gradient(
+//         rgba(255, 255, 255, 0.1) 0 194px,
+//         rgb(132, 161, 120) 194px 100%
+//       ),
+//       url('../images/desktop/gallery_background2x.png');
+//   }
+// }
