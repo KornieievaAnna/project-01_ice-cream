@@ -10,11 +10,9 @@ main{
 @media screen and (min-width: 1200px) {
   background-size: 1200px;
 }
-.container{
-  outline: 2px solid red;
+
 }
-}
-.gallery-section {
+.gallery {
   padding-top: 16px;
   padding-bottom: 80px;
 
@@ -74,7 +72,7 @@ background-image: linear-gradient(
   width: 100%;
   position: absolute;
   opacity: 0;
-  animation: slideanim 20s infinite;
+  animation: slideanim 30s infinite;
 }
 .slideshow-item:nth-child(1),
 .slideshow-item:nth-child(1) img {
@@ -82,11 +80,11 @@ background-image: linear-gradient(
 }
 .slideshow-item:nth-child(2),
 .slideshow-item:nth-child(2) img {
-  animation-delay: 10s;
+  animation-delay: 5s;
 }
 .slideshow-item:nth-child(3),
 .slideshow-item:nth-child(3) img {
-  animation-delay: 20s;
+  animation-delay: 10s;
 }
 
 .slideshow-item__img{
