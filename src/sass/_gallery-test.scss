@@ -1,3 +1,62 @@
+main{
+  background-image:url("../images/desktop/gallery_background1x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 480px;
+
+  @media screen and (min-width: 768px) {
+    background-size: 768px;
+}
+@media screen and (min-width: 1200px) {
+  background-size: 1200px;
+}
+}
+.gallery-section {
+  padding-top: 16px;
+  padding-bottom: 80px;
+  background-image: linear-gradient(
+
+      rgb(132, 161, 120) 0px 60px,
+      rgba(255, 255, 255, 0.1) 60px 186px
+    );
+  background-size: 480px;
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    background-size: 768px;
+    background-image: linear-gradient(
+        rgb(132, 161, 120) 0px 186px,
+        rgba(255, 255, 255, 0.1) 186px 452px
+      );
+  
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 47px;
+    padding-bottom: 60px;
+    background-size: 1200px;
+    background-image: linear-gradient(
+        rgb(132, 161, 120) 0px 180px,
+        rgba(255, 255, 255, 0.1) 180px 452px
+      );
+  
+}
+}
+
+
+
+
+
+
+
+
+
+
 html,
 body {
   position: relative;
@@ -73,76 +132,8 @@ body {
   top: 50%;
 }
 
-.gallery-section {
-  padding-top: 16px;
-  padding-bottom: 80px;
-  @media screen and (min-width: 768px) {
-    padding-top: 60px;
-    padding-bottom: 80px;
-  }
-  @media screen and (min-width: 1200px) {
-    padding-top: 47px;
-    padding-bottom: 60px;
-  }
 
-  .gallery-section__img {
-    border-radius: 24px;
-  }
 
-  background-image: linear-gradient(
-      rgb(132, 161, 120) 0px 60px,
-      rgba(255, 255, 255, 0.1) 60px 186px
-    ),
-    url('../images/mobile/gallery_background1x.png');
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: 480px;
-
-  @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
-    screen and (min-resolution: 192dpi) and (max-width: 767px),
-    screen and (min-resolution: 2dppx) and (max-width: 767px) {
-    background-image: linear-gradient(
-        rgb(132, 161, 120) 0px 60px,
-        rgba(255, 255, 255, 0.1) 60px 186px
-      ),
-      url('../images/mobile/gallery_background2x.png');
-  }
-
-  @media screen and (min-width: 768px) {
-    padding-top: 20px;
-    padding-bottom: 30px;
-    background-size: 768px;
-    background-image: linear-gradient(
-        rgb(132, 161, 120) 0px 180px,
-        rgba(255, 255, 255, 0.1) 180px 452px
-      ),
-      url('../images/tablet/gallery_background1x.png');
-  }
-  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
-    screen and (min-resolution: 192dpi) and (min-width: 1200px),
-    screen and (min-resolution: 2dppx) and (min-width: 1200px) {
-    background-image: linear-gradient(
-        rgb(132, 161, 120) 0px 180px,
-        rgba(255, 255, 255, 0.1) 181px 452px
-      ),
-      url('../images/tablet/gallary_background2x.png');
-  }
-
-  @media screen and (min-width: 1200px) {
-    background-size: 1200px;
-    background-image: linear-gradient(
-        rgb(132, 161, 120) 0px 180px,
-        rgba(255, 255, 255, 0.1) 180px 452px
-      ),
-      url('../images/desktop/gallery_background1x.png');
-  }
-  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
-    screen and (min-resolution: 192dpi) and (min-width: 1200px),
-    screen and (min-resolution: 2dppx) and (min-width: 1200px) {
-    background-image: linear-gradient(
-        rgb(132, 161, 120) 0px 180px,
-        rgba(255, 255, 255, 0.1) 181px 452px
-      ),
-      url('../images/desktop/gallery_background2x.png');
-  }
+.gallery-section__img {
+  border-radius: 24px;
 }
