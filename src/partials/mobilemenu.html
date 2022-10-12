@@ -1,26 +1,47 @@
 <div class="mobile-menu js-menu-container">
-    <a class="mobile-logo" href="./index.html">
-        <picture class="logo__pictures">
-            <source srcset="./images/mobile/mobile-logo@1x.png 1x,
-                                                    ./images/mobile/mobile-logo@2x.png 2x"
-                media="(max-width: 767px)" />
+  <a class="mobile-logo" href="./index.html">
+    <picture class="logo__pictures">
+      <source
+        srcset="
+          ./images/mobile/mobile-logo@1x.png 1x,
+          ./images/mobile/mobile-logo@2x.png 2x
+        "
+        media="(max-width: 767px)"
+      />
 
-            <img aria-label="logo" src="./images/mobile/mobile-logo@1x.png" />
-        </picture>
-    </a>
-    <div class="container mobile-container">
-        <button class="mobile-menu__close-btn js-close-menu">
-            <svg class="mobile-menu__clouse-btn__icon">
-                <use href="./images/sprite.svg#icon-close_black"></use>
-            </svg>
-        </button>
-        <ul class="mobile-menu-nav">
-            <li><a href="./index.html" class="mobile-menu-nav__link" target="_self">Home</a></li>
-            <li><a href="#about" class="mobile-menu-nav__link">How it's made?</a></li>
-            <li><a href="#products" class="mobile-menu-nav__link">Our products</a></li>
-            <li><a href="#contacts" class="mobile-menu-nav__link">Contacts</a></li>
-        </ul>
-        <button class="mobile-menu-btn" type="button">Buy now<i class="arrow right"></i></button>
-    </div>
-
+      <img aria-label="logo" src="./images/mobile/mobile-logo@1x.png" />
+    </picture>
+  </a>
+  <div class="container mobile-container">
+    <button class="mobile-menu__close-btn js-close-menu">
+      <svg class="mobile-menu__clouse-btn__icon">
+        <use href="./images/sprite.svg#icon-close_black"></use>
+      </svg>
+    </button>
+    <ul class="mobile-menu-nav">
+      <li>
+        <a href="./index.html" class="mobile-menu-nav__link" target="_self"
+          >Home</a
+        >
+      </li>
+      <li>
+        <a href="#about" class="mobile-menu-nav__link js-close-menu-1"
+          >How it's made?</a
+        >
+      </li>
+      <li>
+        <a href="#products" class="mobile-menu-nav__link js-close-menu-2"
+          >Our products</a
+        >
+      </li>
+      <li>
+        <a href="#contacts" class="mobile-menu-nav__link js-close-menu-3"
+          >Contacts</a
+        >
+      </li>
+    </ul>
+    <button class="mobile-menu-btn" type="button" data-modal-open-5>
+      Buy now<i class="arrow right"></i>
+    </button>
+  </div>
 </div>
