@@ -10,6 +10,9 @@ main{
 @media screen and (min-width: 1200px) {
   background-size: 1200px;
 }
+.container{
+  outline: 2px solid red;
+}
 }
 .gallery-section {
   padding-top: 16px;
