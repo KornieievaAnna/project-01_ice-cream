@@ -1,8 +1,9 @@
 .modal-ingredients {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 20px;
+  left: 50vw;
+  transform: translate(-50%, 0) scale(1);
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
 
   display: flex;
   flex-direction: column;
@@ -15,8 +16,6 @@
   width: 280px;
   height: 990px;
 
-  animation: bounceInDown;
-  animation-duration: 500ms;
 
   background-color: var(--modal-background);
   border: 2px solid var(--modal-border-color);
@@ -190,8 +189,8 @@
   }
 }
 
-// @media screen and (min-width: 1200px) {
-//   .modal-ingredients {
-//     top: 50px;
-//   }
-// }
+@media screen and (min-width: 1200px) {
+  .modal-ingredients {
+    top: 20%;
+  }
+}
