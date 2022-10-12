@@ -79,11 +79,11 @@ background-image: linear-gradient(
 }
 .slideshow-item:nth-child(2),
 .slideshow-item:nth-child(2) img {
-  animation-delay: 1s;
+  animation-delay: 10s;
 }
 .slideshow-item:nth-child(3),
 .slideshow-item:nth-child(3) img {
-  animation-delay: 2s;
+  animation-delay: 20s;
 }
 
 .slideshow-item__img{
@@ -91,7 +91,7 @@ background-image: linear-gradient(
   width: 100%;
   height: 100%;
   object-fit: cover;
-  animation: zoom 10s infinite;
+  animation: zoom 40s infinite;
 }
 
 
