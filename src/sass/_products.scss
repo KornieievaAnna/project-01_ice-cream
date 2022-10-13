@@ -1,54 +1,57 @@
 .products {
+  // background-color: #fff;
   padding-top: 60px;
   padding-bottom: 60px;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
 
-  @media screen and (max-width: 479px) {
-    background-image: url(../images/products/mobile/background_mobile_1_1x.png);
+  // @media screen and (max-width: 479px) {
+  //   background-image: url(../images/products/tablet/background_tablet_1x.png);
+  //   background-position: left;
+  //   background-repeat: repeat-y;
 
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      .products {
-        background-image: url(../images/products/mobile/background_mobile_1_2x.png);
-      }
-    }
-  }
+  //   @media (min-device-pixel-ratio: 2),
+  //     (min-resolution: 192dpi),
+  //     (min-resolution: 2dppx) {
+  //     .products {
+  //       background-image: url(../images/products/tablet/background_tablet_2x.png);
+  //     }
+  //   }
+  // }
 
-  @media screen and (min-width: 480px) {
-    width: 480px;
-    background-image: url(../images/products/tablet/background_tablet_1x.png);
+  // @media screen and (min-width: 480px) {
+  //   width: 480px;
+  //   background-image: url(../images/products/tablet/background_tablet_1x.png);
 
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      .products {
-        background-image: url(../images/products/tablet/background_tablet_2x.png);
-      }
-    }
-  }
+  //   @media (min-device-pixel-ratio: 2),
+  //     (min-resolution: 192dpi),
+  //     (min-resolution: 2dppx) {
+  //     .products {
+  //       background-image: url(../images/products/tablet/background_tablet_2x.png);
+  //     }
+  //   }
+  // }
   @media screen and (min-width: 768px) {
-    width: 768px;
+    // width: 768px;
     padding-bottom: 82px;
   }
 
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url(../images/products/desktop/desktop_bg_1x.png);
+  // @media screen and (min-width: 1200px) {
+  //   width: 1200px;
+  //   background-position: top;
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  //   background-image: url(../images/products/desktop/desktop_bg_1x.png);
 
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      .products {
-        background-image: url(../images/products/desktop/desktop_bg_2x.png);
-      }
-    }
-  }
+  //   @media (min-device-pixel-ratio: 2),
+  //     (min-resolution: 192dpi),
+  //     (min-resolution: 2dppx) {
+  //     .products {
+  //       background-image: url(../images/products/desktop/desktop_bg_2x.png);
+  //     }
+  //   }
+  // }
 }
 
 .products__container {
@@ -172,7 +175,19 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  //   transition: box-shadow var(--cubic);
+
+  box-shadow: none;
+  transition: box-shadow var(--cubic);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  }
+
+  &:hover {
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    transition: box-shadow var(--cubic);
+  }
 
   &:nth-child(1) {
     background-color: var(--products-background-green);
@@ -232,11 +247,6 @@
       display: block;
       z-index: 2;
     }
-  }
-
-  .products__button:focus &,
-  .products__button:hover & {
-    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   }
 
   @media screen and (max-width: 479px) {
@@ -821,33 +831,18 @@
   min-width: 60px;
   min-height: 20px;
 
-  cursor: pointer;
-
   align-items: center;
-  //   transition: min-width var(--cubic), min-height var(--cubic);
 
   &:focus {
-    min-width: 64px;
-    min-height: 28px;
+    transform: scale(1.15, 1.3);
   }
 
   &:hover {
-    min-width: 64px;
-    min-height: 24px;
+    transform: scale(1.15);
   }
 }
 
 .products__icon {
   width: 40px;
   height: 15px;
-  transition: width var(--cubic), height var(--cubic);
-
-  .products__button:focus & {
-    width: 50px;
-    height: 20px;
-  }
-
-  .products__button:hover & {
-    width: 50px;
-  }
 }

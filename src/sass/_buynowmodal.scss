@@ -1,8 +1,9 @@
 .modal-ingredients {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 20px;
+  left: 50vw;
+  transform: translate(-50%, 0) scale(1);
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
 
   display: flex;
   flex-direction: column;
@@ -15,8 +16,6 @@
   width: 280px;
   height: 990px;
 
-  animation: bounceInDown;
-  animation-duration: 500ms;
 
   background-color: var(--modal-background);
   border: 2px solid var(--modal-border-color);
@@ -40,6 +39,11 @@
   right: 20px;
   background-color: transparent;
   border: none;
+    &:hover,
+    &:focus {
+      fill: var(--button-color);
+    }
+     
 }
 
 .modal-ingredients__button-icon {
@@ -85,7 +89,9 @@
   width: 53px;
   height: 72px;
   border: 2px solid #9cbe8f;
+  padding-bottom: 8px;
   border-radius: 40px;
+  
 }
 
 .modal-ingredients__value {
@@ -106,8 +112,11 @@
 }
 
 .modal-ingredients__units {
+  text-align: center;
   @include font(400, 10px, 12px);
   color: var(--text-color-dark);
+  
+  
 }
 
 // table
@@ -153,7 +162,15 @@
 .modal-order__input_ingredients::placeholder {
   @include font(400, 14px, 20px);
 }
-
+@media screen  and (max-width: 767px) {
+  .modal-ingredients__units{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 38px;
+  }
+  
+}
 @media screen and (min-width: 768px) {
   .modal-ingredients {
     width: 568px;
@@ -190,8 +207,8 @@
   }
 }
 
-// @media screen and (min-width: 1200px) {
-//   .modal-ingredients {
-//     top: 50px;
-//   }
-// }
+@media screen and (min-width: 1200px) {
+  .modal-ingredients {
+    top: 20%;
+  }
+}
