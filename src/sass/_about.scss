@@ -179,17 +179,20 @@
   align-items: center;
   text-align: center;
   border-radius: 10px;
-  border: 0;
+  border: none;
   margin-top: 20px;
   display: flex;
-  gap: 5px;
+  gap: 7px;
+  padding: 12px 34px;
   background-color: var(--button-color);
+  
+  color: var(--text-color-dark);
+
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background var(--cubic), color var(--cubic);
 
   @media screen and (min-width: 768px) {
     margin-top: 48px;
@@ -198,24 +201,29 @@
   }
   @media screen and (min-width: 1200px) {
   }
+
+
+  &:hover {
+    background-color: var(--button-active-color);
+  }
+  
+ &:focus {
+    background-color: var(--button-active-color);
+    color: var(--button-active-text-color);
+  }
+  
+ &:default {
+    background-color: var(--button-disable-color);
+  }
+
+
+
 }
 
-.ice-btn:hover {
-  background-color: var(--button-active-color);
-}
-
-.ice-btn:focus {
-  background-color: var(--button-active-color);
-  color: var(--button-active-text-color);
-}
-
-.ice-btn:default {
-  background-color: var(--button-disable-color);
-}
 
 .arrow {
-  border-right: solid black;
-  border-bottom: solid black;
+  border-right: solid var(--text-color-dark);
+  border-bottom: solid var(--text-color-dark);
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 3px;
