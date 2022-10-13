@@ -530,6 +530,14 @@
 .hero-pic-box__arrow-icon {
   animation-duration: 3s;
   animation-name: slidein;
+
+  // &:focus {
+  //   transform: scale(1.25);
+  // }
+
+  &:hover {
+    transform: scale(1.15);
+  }
 }
 
 @keyframes slidein {
