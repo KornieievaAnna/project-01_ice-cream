@@ -4,10 +4,10 @@
 .page-header_container {
   position: relative;
   padding-bottom: 239px;
-  background-image: url(../images/mobile/mobile-dots@1x.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: bottom;
+//   background-image: url(../images/mobile/mobile-dots@1x.png);
+//   background-repeat: no-repeat;
+//   background-size: contain;
+//   background-position: bottom;
 }
 .page-header_wrapper {
   display: flex;
@@ -104,29 +104,15 @@
     color: var(--button-disable-color);
   }
 }
-@media screen and (max-width: 479px) {
-  .header-nav {
-    display: none;
-  }
-  .order-menu-btn {
-    display: none;
-  }
-  .hero-info {
-    display: none;
-  }
-  .hero-pic-box {
-    display: none;
-  }
-  .hero-pic-aside__ice-cream {
+.hero-dots__pic {
     position: absolute;
-    z-index: 3;
-    bottom: 10%;
-    left: 25%;
-    max-width: 170px;
-    height: 219px;
-  }
+    z-index: 2;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+   
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .header-nav {
     display: none;
   }
@@ -142,8 +128,8 @@
   .hero-pic-aside__ice-cream {
     position: absolute;
     z-index: 3;
-    bottom: 10%;
-    left: 18%;
+    bottom: 10.5%;
+    left: 10%;
     max-width: 170px;
     height: 219px;
   }
@@ -151,9 +137,9 @@
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
   screen and (min-resolution: 192dpi) and (max-width: 767px),
   screen and (min-resolution: 2dppx) and (max-width: 767px) {
-  .page-header_container {
-    background-image: url(../images/mobile/mobile-dots@2x.png);
-  }
+//   .page-header_container {
+//     background-image: url(../images/mobile/mobile-dots@2x.png);
+//   }
 }
 @media screen and (min-width: 768px) {
   .page-header_container {
@@ -161,7 +147,7 @@
     padding-right: 32px;
     padding-bottom: 193px;
     position: relative;
-    background-image: url(../images/tablet/tablet-dots@1x.png);
+    // background-image: url(../images/tablet/tablet-dots@1x.png);
   }
   .header-nav {
     display: none;
@@ -271,7 +257,7 @@
   .hero-pic-box {
     display: flex;
     align-items: center;
-    z-index: 2;
+    z-index: 3;
     gap: 33px;
     position: absolute;
     left: 32px;
@@ -300,9 +286,9 @@
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
   screen and (min-resolution: 192dpi) and (min-width: 768px),
   screen and (min-resolution: 2dppx) and (min-width: 768px) {
-  .page-header_container {
-    background-image: url(../images/tablet/tablet-dots@2x.png);
-  }
+//   .page-header_container {
+//     background-image: url(../images/tablet/tablet-dots@2x.png);
+//   }
 }
 @media screen and (min-width: 1200px) {
   .page-header_container {
@@ -310,7 +296,7 @@
     padding-right: 16px;
     padding-bottom: 332px;
     position: relative;
-    background-image: url(../images/desktop/desctop-dots@1x.png);
+    // background-image: url(../images/desktop/desctop-dots@1x.png);
   }
   .header-nav {
     display: flex;
@@ -445,7 +431,7 @@
   }
   .hero-pic-aside__ice-cream {
     position: absolute;
-    z-index: 1;
+    z-index: 3;
     bottom: 10%;
     left: 47%;
     width: 484px;
@@ -455,9 +441,9 @@
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
   screen and (min-resolution: 192dpi) and (min-width: 1200px),
   screen and (min-resolution: 2dppx) and (min-width: 1200px) {
-  .page-header_container {
-    background-image: url(../images/desktop/desctop-dots@2x.png);
-  }
+//   .page-header_container {
+//     background-image: url(../images/desktop/desctop-dots@2x.png);
+//   }
 }
 // --------------------------------------- ANIMATION ---------------------------------------
 .logo {
