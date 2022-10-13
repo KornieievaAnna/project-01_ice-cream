@@ -26,7 +26,6 @@
   background-color: white;
   border-radius: 10px;
   border: 2px solid var(--button-color);
-  transition: fill var(--cubic);
   padding: 28px;
   display: flex;
   flex-direction: column;
@@ -38,6 +37,7 @@
   top: 8px;
   right: 8px;
   background-color: transparent;
+  transition: fill var(--cubic);
   padding: 0;
   border: none;
 
