@@ -1,9 +1,21 @@
 .page-header_container {
   background-color: var(--background-color);
+  background-image: url('../images/mobile/ice-cream-mobile-1x.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
   // border: 2px solid red;
   position: relative;
   padding-bottom: 239px;
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/mobile/ice-cream-mobile@2x.png');
+  }
 }
+
 .page-header_wrapper {
   display: flex;
   align-items: center;
@@ -146,14 +158,14 @@
   .hero-pic-box {
     display: none;
   }
-  .hero-pic-aside__ice-cream {
-    position: absolute;
-    z-index: 3;
-    bottom: 10%;
-    left: 25%;
-    width: 170px;
-    height: 219px;
-  }
+  // .hero-pic-aside__ice-cream {
+  // position: absolute;
+  // z-index: 3;
+  // bottom: 10%;
+  // left: 25%;
+  // width: 170px;
+  // height: 219px;
+  // }
 }
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
   screen and (min-resolution: 192dpi) and (max-width: 767px),
