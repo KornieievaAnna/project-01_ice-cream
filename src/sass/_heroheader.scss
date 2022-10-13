@@ -104,13 +104,14 @@
     color: var(--button-disable-color);
   }
 }
+// .hero-dots {
+//     position: relative;
+// }
 .hero-dots__pic {
     position: absolute;
     z-index: 2;
-    width: 100%;
     bottom: 0;
     left: 0;
-   
 }
 @media screen and (max-width: 767px) {
   .header-nav {
@@ -128,10 +129,8 @@
   .hero-pic-aside__ice-cream {
     position: absolute;
     z-index: 3;
-    bottom: 10.5%;
-    left: 10%;
-    max-width: 170px;
-    height: 219px;
+    bottom: -10.5%;
+    left: 17%;
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
@@ -277,10 +276,8 @@
   .hero-pic-aside__ice-cream {
     position: absolute;
     z-index: 3;
-    bottom: 13%;
-    left: 47%;
-    width: 270px;
-    height: 343px;
+    bottom: -14%;
+    left: 48%;
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
@@ -432,10 +429,8 @@
   .hero-pic-aside__ice-cream {
     position: absolute;
     z-index: 3;
-    bottom: 10%;
+    bottom: -14.5%;
     left: 47%;
-    width: 484px;
-    height: 590px;
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
