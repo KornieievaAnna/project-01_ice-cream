@@ -6,9 +6,9 @@
   padding-top: 26px;
   padding-bottom: 38px;
   background-image: linear-gradient(
-      rgba(255, 255, 255, 0.1) 0px 365px,
-      rgb(132, 161, 120) 365px 100%
-    );
+    rgba(255, 255, 255, 0.1) 0px 365px,
+    rgb(132, 161, 120) 365px 100%
+  );
   //   url(../images/mobile/gallery_background1x.png);
   // background-image: linear-gradient(
   //     rgba(255, 255, 255, 0.1) 0px 365px,
@@ -36,44 +36,44 @@
 
   @media screen and (min-width: 768px) {
     background-image: linear-gradient(
-        rgba(255, 255, 255, 0.1) 0px 128px,
-        rgb(132, 161, 120) 128px 100%
-      );
-  //     url(../images/tablet/gallery_background1x.png);
-  //   background-position: top;
-  //   background-repeat: no-repeat;
-  //   background-size: 768px;
+      rgba(255, 255, 255, 0.1) 0px 128px,
+      rgb(132, 161, 120) 128px 100%
+    );
+    //     url(../images/tablet/gallery_background1x.png);
+    //   background-position: top;
+    //   background-repeat: no-repeat;
+    //   background-size: 768px;
 
-  //   @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
-  //     screen and (min-resolution: 192dpi) and (max-width: 767px),
-  //     screen and (min-resolution: 2dppx) and (max-width: 767px) {
-  //     background-image: linear-gradient(
-  //         rgba(255, 255, 255, 0.1) 0px 128px,
-  //         rgb(132, 161, 120) 128px 100%
-  //       ),
-  //       url('../images/desktop/gallery_background2x.png');
-  //   }
+    //   @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+    //     screen and (min-resolution: 192dpi) and (max-width: 767px),
+    //     screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    //     background-image: linear-gradient(
+    //         rgba(255, 255, 255, 0.1) 0px 128px,
+    //         rgb(132, 161, 120) 128px 100%
+    //       ),
+    //       url('../images/desktop/gallery_background2x.png');
+    //   }
   }
 
   @media screen and (min-width: 1200px) {
     background-image: linear-gradient(
-        rgba(255, 255, 255, 0.1) 0px 100px,
-        rgb(132, 161, 120) 100px 100%
-      );
-  //     url(../images/tablet/gallery_background1x.png);
-  //   background-position: top;
-  //   background-repeat: no-repeat;
-  //   background-size: 1200px;
+      rgba(255, 255, 255, 0.1) 0px 100px,
+      rgb(132, 161, 120) 100px 100%
+    );
+    //     url(../images/tablet/gallery_background1x.png);
+    //   background-position: top;
+    //   background-repeat: no-repeat;
+    //   background-size: 1200px;
 
-  //   @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
-  //     screen and (min-resolution: 192dpi) and (max-width: 767px),
-  //     screen and (min-resolution: 2dppx) and (max-width: 767px) {
-  //     background-image: linear-gradient(
-  //         rgba(255, 255, 255, 0.1) 0px 100px,
-  //         rgb(132, 161, 120) 100px 100%
-  //       ),
-  //       url('../images/desktop/gallery_background2x.png');
-  //   }
+    //   @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+    //     screen and (min-resolution: 192dpi) and (max-width: 767px),
+    //     screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    //     background-image: linear-gradient(
+    //         rgba(255, 255, 255, 0.1) 0px 100px,
+    //         rgb(132, 161, 120) 100px 100%
+    //       ),
+    //       url('../images/desktop/gallery_background2x.png');
+    //   }
   }
 
   &__list {
@@ -86,8 +86,11 @@
     width: 280px;
     padding: 40px 32px;
     background: #fcfcfc;
-    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
+
+    &:hover {
+      box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    }
   }
   &__title {
     text-align: center;
@@ -238,10 +241,10 @@
   .contacts {
     background-size: 768px;
     background-image: linear-gradient(
-        rgba(255, 255, 255, 0.1) 0 168px,
-        rgb(132, 161, 120) 168px 100%
-      );
-      // url('../images/tablet/gallery_background1x.png');
+      rgba(255, 255, 255, 0.1) 0 168px,
+      rgb(132, 161, 120) 168px 100%
+    );
+    // url('../images/tablet/gallery_background1x.png');
     padding-top: 62px;
     padding-bottom: 40px;
     &__text {
@@ -303,10 +306,10 @@
   .contacts {
     background-size: 1200px;
     background-image: linear-gradient(
-        rgba(255, 255, 255, 0.1) 0 194px,
-        rgb(132, 161, 120) 194px 100%
-      );
-      // url('../images/desktop/gallery_background1x.png');
+      rgba(255, 255, 255, 0.1) 0 194px,
+      rgb(132, 161, 120) 194px 100%
+    );
+    // url('../images/desktop/gallery_background1x.png');
     padding-top: 50px;
     padding-bottom: 120px;
 
