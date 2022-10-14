@@ -1,11 +1,3 @@
-body {
-  background-image: url('../images/tablet/gallery_background1x.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
 .gallery-section {
   background-image: linear-gradient(
     rgb(132, 161, 120) 0px 60px,
@@ -37,8 +29,8 @@ body {
   padding-bottom: 80px;
 
   @media screen and (min-width: 768px) {
-    padding-top: 60px;
-    padding-bottom: 80px;
+    padding-top: 40px;
+    padding-bottom: 35px;
   }
 
   @media screen and (min-width: 1200px) {

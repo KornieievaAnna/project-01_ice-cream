@@ -49,6 +49,15 @@ body {
   letter-spacing: 0.04em;
 }
 
+main {
+  background-image: url('../images/tablet/gallery_background1x.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  animation: none;
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;

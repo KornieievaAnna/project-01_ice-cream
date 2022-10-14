@@ -127,10 +127,12 @@
     display: flex;
     flex-direction: row;
     gap: 80px;
+    align-items: flex-start;
   }
 
   .advantages-list__item {
-    width: calc((100% - 160px) / 3);
+    // width: calc((100% - 160px) / 3);
+    margin: 0px;
   }
 
   .advantages-list__title {
@@ -154,6 +156,7 @@
     line-height: 1.71;
     text-align: center;
     color: var(--text-color-light);
+    margin-bottom: 0;
   }
 
   .advantages-list__item--one::before {
