@@ -1,5 +1,5 @@
 .page-header {
-    background-color: var(--background-color);
+  background-color: var(--background-color);
 }
 .page-header_container {
   position: relative;
@@ -17,6 +17,12 @@
   background-color: transparent;
   border: none;
 }
+
+.hero-dots__pic-img {
+  max-width: 100%;
+  height: auto;
+}
+
 @mixin herotitle {
   font-family: 'Seymour One';
   font-style: normal;
@@ -101,10 +107,10 @@
   }
 }
 .hero-dots__pic {
-    position: absolute;
-    z-index: 2;
-    bottom: 0;
-    left: 0;
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  left: 0;
 }
 @media screen and (max-width: 767px) {
   .header-nav {
