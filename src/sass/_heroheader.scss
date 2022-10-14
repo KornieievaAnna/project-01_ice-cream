@@ -143,8 +143,6 @@
 }
 @media screen and (min-width: 768px) {
   .page-header_container {
-    // padding-left: 32px;
-    // padding-right: 32px;
     padding-bottom: 193px;
     position: relative;
   }
@@ -292,8 +290,6 @@
 }
 @media screen and (min-width: 1200px) {
   .page-header_container {
-    // padding-left: 16px;
-    // padding-right: 16px;
     padding-bottom: 332px;
     position: relative;
   }
@@ -495,10 +491,6 @@
 .hero-pic-box__arrow-icon {
   animation-duration: 3s;
   animation-name: slidein;
-
-  // &:focus {
-  //   transform: scale(1.25);
-  // }
 
   &:hover {
     transform: scale(1.15);
